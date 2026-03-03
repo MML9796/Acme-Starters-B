@@ -1,7 +1,2 @@
 key,key:userAccount,bio,keyWords,licensed
-inventor-01,user-account-inventor-01,"","energy,storage,batteries",true
-inventor-02,user-account-inventor-02," ","energy,storage,batteries",true
-inventor-03,user-account-inventor-03,"Senior inventor researching scalable renewable energy infrastructures for urban environments, collaborating with multidisciplinary engineering teams to design efficient storage solutions adaptable to modern smart cities and global industrial applications. ","energy,storage,batteries",true
-inventor-04,user-account-inventor-04,"Industrial","",true
-inventor-05,user-account-inventor-05,"Industrial"," ",true
-inventor-06,user-account-inventor-06,"Industrial","renewable-energy,distributed-storage,grid-optimization,industrial-electronics,smart-infrastructure,advanced-materials,research-development,energy-transition,efficiency-modeling,sustainable-innovation,power-grid-stability,clean-tech-solutions,urban-system. ",true
+inventor-01,user-account-inventor-01,"Industrial inventor focused on sustainable energy storage systems","energy,storage,batteries",true

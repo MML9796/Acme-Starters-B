@@ -1,7 +1,2 @@
 key,enabled,identity,password,username
-user-account-inventor-01,true,"UserIdentity{name: ' ', surname: 'Torres', email: 'elena@acme.com'}",inventor1,inventor1
-user-account-inventor-02,true,"UserIdentity{name: '', surname: '山本', email: 'hiro@acme.com'}",inventor2,inventor2
-user-account-inventor-03,true,"UserIdentity{name: '', surname: 'الحكيم', email: 'omar@acme.com'}",inventor3,inventor3
-user-account-inventor-04,true,"UserIdentity{name: '', surname: 'Fernández', email: 'lucia@acme.com'}",inventor4,inventor4
-user-account-inventor-05,true,"UserIdentity{name: '', surname: 'Müller', email: 'noah@acme.com'}",inventor5,inventor5
-user-account-inventor-06,true,"UserIdentity{name: 'Anya', surname: 'Кузнецова', email: 'anya@acme.com'}",inventor6,inventor6
+user-account-inventor-01,true,"UserIdentity{name: 'Elena', surname: 'Torres', email: 'elena@acme.com'}",inventor1,inventor1
