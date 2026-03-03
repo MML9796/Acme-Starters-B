@@ -1,15 +1,30 @@
 key,name,notes,expectedPercentage,kind,key:strategy
 tactic-01,"Base Tactic","Base notes text",50.00,SUBTLE,strategy-01
-tactic-02,"T","Base notes text",50.00,SUBTLE,strategy-01
-tactic-03,"Täctic ñ 洛伦","Base notes text",50.00,SUBTLE,strategy-01
-tactic-04,"<script>alert()</script>","Base notes text",50.00,SUBTLE,strategy-01
-tactic-05,"Base Tactic","N",50.00,SUBTLE,strategy-01
-tactic-06,"Base Tactic","Nötes ñ 洛伦",50.00,SUBTLE,strategy-01
-tactic-07,"Base Tactic","<script>alert()</script>",50.00,SUBTLE,strategy-01
-tactic-08,"Base Tactic","Base notes text",0.00,SUBTLE,strategy-01
-tactic-09,"Base Tactic","Base notes text",100.00,SUBTLE,strategy-01
-tactic-10,"Base Tactic","Base notes text",0.01,SUBTLE,strategy-01
-tactic-11,"Base Tactic","Base notes text",99.99,SUBTLE,strategy-01
-tactic-12,"Base Tactic","Base notes text",50.00,AGGRESSIVE,strategy-01
-tactic-13,"Base Tactic","Base notes text",50.00,TENDER,strategy-01
-tactic-14,"Support Tactic","Para cumplir el constraint de estrategia",50.00,SUBTLE,strategy-12
+tactic-02,"T","Base notes text",50.00,SUBTLE,strategy-02
+tactic-03,"Ta","Base notes text",50.00,SUBTLE,strategy-01
+tactic-04,"Ta","Base notes text",50.00,SUBTLE,strategy-02
+tactic-05,"Esta es una tactica para probar el limite max. Esta es una tactica para pr","Base notes text",50.00,SUBTLE,strategy-01
+tactic-06,"Esta es una tactica para probar el limite max. Esta es una tactica para pro","Base notes text",50.00,SUBTLE,strategy-02
+tactic-07,"โลเร็ม อิปซัม","Base notes text",50.00,SUBTLE,strategy-01
+tactic-08,"لوريم إيبسوم","Base notes text",50.00,SUBTLE,strategy-02
+tactic-09,"洛伦·伊普森 ","Base notes text",50.00,SUBTLE,strategy-01
+tactic-10,"<marquee>Hacked</marquee>","Base notes text",50.00,SUBTLE,strategy-02
+tactic-11,"<script>alert(‘Hacked!’);</script>","Base notes text",50.00,SUBTLE,strategy-01
+tactic-12,"'' or 'A' = 'A ","Base notes text",50.00,SUBTLE,strategy-02
+tactic-13,"Base Tactic","B",50.00,SUBTLE,strategy-01
+tactic-14,"Base Tactic","Ba",50.00,SUBTLE,strategy-02
+tactic-15,"Base Tactic","Ba",50.00,SUBTLE,strategy-01
+tactic-16,"Base Tactic","Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. FINI",50.00,SUBTLE,strategy-02
+tactic-17,"Base Tactic","Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. FINIS",50.00,SUBTLE,strategy-01
+tactic-18,"Base Tactic","โลเร็ม อิปซัม",50.00,SUBTLE,strategy-02
+tactic-19,"Base Tactic","لوريم إيبسوم",50.00,SUBTLE,strategy-01
+tactic-20,"Base Tactic","洛伦·伊普森 ",50.00,SUBTLE,strategy-02
+tactic-21,"Base Tactic","<marquee>Hacked</marquee>",50.00,SUBTLE,strategy-01
+tactic-22,"Base Tactic","<script>alert(‘Hacked!’);</script>",50.00,SUBTLE,strategy-02
+tactic-23,"Base Tactic","'' or 'A' = 'A ",50.00,SUBTLE,strategy-01
+tactic-24,"Base Tactic","Base notes text",0.00,SUBTLE,strategy-01
+tactic-25,"Base Tactic","Base notes text",0.01,SUBTLE,strategy-01
+tactic-26,"Base Tactic","Base notes text",99.99,SUBTLE,strategy-01
+tactic-27,"Base Tactic","Base notes text",100.00,SUBTLE,strategy-01
+tactic-28,"Base Tactic","Base notes text",50.00,AGGRESSIVE,strategy-01
+tactic-29,"Base Tactic","Base notes text",50.00,TENDER,strategy-48
