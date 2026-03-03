@@ -54,7 +54,7 @@ public class StrategyValidator extends AbstractValidator<ValidStrategy, Strategy
 					hasTactics = count != null && count > 0;
 				}
 
-				super.state(context, hasTactics, "*", "acme.validation.strategy.missing-tactics.message");
+				super.state(context, hasTactics, "tactic", "Strategies cannot be published unless they have at least one tactic");
 			}
 
 			result = !super.hasErrors(context);
