@@ -1,0 +1,51 @@
+key,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,key:spokesperson
+
+camp-01,"AB12-ABCDE","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-01
+
+camp-02,"AB12-ABCDEF","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-02
+camp-03,"AB12-ABCDEFFTG","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-01
+camp-04,"AB12-ABCDEFFT","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-02
+
+
+camp-05,"AB12-ABCDES","Tech Expansion 2025 - Global Innovation & Future Growth Summit","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-01
+camp-06,"AB12-ABCDEZ","Tech Expansion 2025 - Global Innovation & Future Growth Summi","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-02
+camp-07,"AB15-ABCDEA","Te","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-01
+camp-08,"AB16-ABCDEB","T","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-02
+
+camp-09,"AB12-ABCDEC","Tech Expansion 2025","E","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-01
+camp-10,"AB12-ABCDED","Tech Expansion 2025","Ex","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-02
+camp-11,"AB11-ABCDE","Tech Expansion 2025","StrategicExpansionAlphaNode2026_GlobalMatrixCoreXZStrategicExpansionAlphaNode2026_GlobalMatrixCoreXZStrategicExpansionAlphaNode2026_GlobalMatrixCoreXZStrategicExpansionAlphaNode2026_GlobalMatrixCoreXZStrategicExpansionAlphaNode2026_GlobalMatrixCoreXZ12345","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-01
+camp-12,"AB11-ABCDEA","Tech Expansion 2025","StrategicExpansionAlphaNode2026_GlobalMatrixCoreXZStrategicExpansionAlphaNode2026_GlobalMatrixCoreXZStrategicExpansionAlphaNode2026_GlobalMatrixCoreXZStrategicExpansionAlphaNode2026_GlobalMatrixCoreXZStrategicExpansionAlphaNode2026_GlobalMatrixCoreXZ1234","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-01
+camp-13,"AB11-ABCDEAS","Tech Expansion 2025","โลเร็ม อิปซัม 洛伦·伊普森 ","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-02
+camp-14,"AB11-ABCDEM","Tech Expansion 2025","<marquee>Hacked</marquee> <script>alert(‘Hacked!’);</script> '' or 'A' = 'A ","2026/04/15 10:00","2026/10/15 10:00","http://example.com",true,spk-01
+
+camp-15,"AB13-ABCDE","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2200/12/31 23:58","2200/12/31 23:59","http://example.com",true,spk-01
+camp-16,"AB13-ABCDEA","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2200/12/31 23:57","2200/12/31 23:58","http://example.com",true,spk-01
+camp-17,"AB13-ABCDEC","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2025/01/01 00:00","2025/01/01 00:01","http://example.com",true,spk-01
+camp-18,"AB13-ABCDECA","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2025/01/01 00:01","2025/01/01 00:02","http://example.com",true,spk-01
+
+camp-19,"AB14-ABCDE","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://lorem.com/ipsum",true,spk-01
+camp-20,"AB14-ABCDEA","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://a.b",true,spk-02
+camp-21,"AB14-ABCDEB","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",true,spk-01
+camp-22,"AB14-ABCDESA","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",true,spk-02
+camp-23,"AB14-ABCDEAS","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://www.lorem-ipsum.org",true,spk-01
+camp-24,"AB14-ABCDEAA","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","https://www.lorem-ipsum.org",true,spk-01
+camp-25,"AB14-ABCDEEA","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://www.lorem-ipsum.org/dolor/sit.html",true,spk-02
+camp-26,"AB14-ABCDSEA","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://www.lorem-ipsum.org/dolor/sit.html#dolor",true,spk-01
+camp-27,"AB14-ABCDSAA","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.org?a=1&b=2",true,spk-01
+camp-28,"AB14-ABCDSEE","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.org?",true,spk-01
+camp-29,"AB14-ABCDAWE","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.org?a",true,spk-01
+camp-30,"AB14-ABCDEWE","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.org?a&b",true,spk-01
+camp-31,"AB14-ABCDEWA","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.org/",true,spk-02
+camp-32,"AB14-ABCDWWA","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.org/a",true,spk-02
+camp-33,"AB14-ABCDWWW","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.org/a/b",true,spk-02
+camp-34,"AB14-ABCDDWW","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.org/a/b?",true,spk-02
+camp-35,"AB14-ADCDDWSW","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.org/a/b?a&b",true,spk-02
+
+camp-36,"AB90-ABCDE","Tech Expansion 2025","Expansion campaign for new AI product in Europe","2026/04/15 10:00","2026/10/15 10:00","http://example.com",false,spk-01
+
+
+
+
+
+
