@@ -1,0 +1,4 @@
+key,bank,statement,agent,key:userAccount
+fundraiser-01,"Base Bank Primero","Base statement text Primero",true,user-account-fundraiser-01
+fundraiser-02,"Base Bank Segundo","Base statement text Segundo",true,user-account-fundraiser-02
+fundraiser-03,"Base Bank Tercero","Base statement text Tercero",true,user-account-fundraiser-03
