@@ -1,0 +1,12 @@
+key,name,notes,expectedPercentage,kind,key:strategy
+tactic-01,"","Base notes text",50.00,SUBTLE,strategy-01
+tactic-02," ","Base notes text",50.00,SUBTLE,strategy-01
+tactic-03,"Esta es una estrategia para probar el limite max. Esta es una estrategia paa","Base notes text",50.00,SUBTLE,strategy-01
+tactic-04,"Base Tactic","",50.00,SUBTLE,strategy-01
+tactic-05,"Base Tactic"," ",50.00,SUBTLE,strategy-01
+tactic-06,"Base Tactic","Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. Esta es una estrategia para probar el limite max. FINISS",50.00,SUBTLE,strategy-01
+tactic-07,"Base Tactic","Base notes text", ,SUBTLE,strategy-01
+tactic-08,"Base Tactic","Base notes text",-0.01,SUBTLE,strategy-01
+tactic-09,"Base Tactic","Base notes text",100.01,SUBTLE,strategy-01
+
+
