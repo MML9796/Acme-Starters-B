@@ -9,14 +9,17 @@ import org.springframework.stereotype.Service;
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.part.Part;
+import acme.features.any.invention.AnyInventionRepository;
 
 @Service
 public class AnyPartListService extends AbstractService<Any, Part> {
 
 	//Internal state
 	@Autowired
-	private AnyPartRepository	repository;
-	private Collection<Part>	part;
+	private AnyPartRepository		repository;
+	@Autowired
+	private AnyInventionRepository	inventionRepository;
+	private Collection<Part>		part;
 
 
 	//AbstractService interface
@@ -30,7 +33,11 @@ public class AnyPartListService extends AbstractService<Any, Part> {
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(true);
+		boolean status;
+		int id = super.getRequest().getData("inventionId", int.class);
+		status = !this.inventionRepository.findInventionById(id).getDraftMode();
+		super.setAuthorised(status);
+
 	}
 
 	@Override

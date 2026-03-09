@@ -83,18 +83,18 @@ public class Invention extends AbstractEntity {
 	// Derived attributes -----------------------------------------------------
 
 
-	@Transient
 	@Mandatory
-	//@Valid
-	public double getMonthsActive() {
+	@Valid
+	@Transient
+	public Double getMonthsActive() {
 		long diffMillis = this.endMoment.getTime() - this.startMoment.getTime();
 		double meses = diffMillis / (1000.0 * 60 * 60 * 24 * 30);
 		return Math.round(meses * 10.0) / 10.0;
 	}
 
-	@Transient
 	@Mandatory
 	@ValidMoney2(min = 0.0)
+	@Transient
 	public Money getCost() {
 
 		Double sum = this.repository.getSumCostsPartsByInvention(this.getId());
