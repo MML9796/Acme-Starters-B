@@ -19,8 +19,12 @@
 <acme:menu-bar>
 	<acme:menu-left>
 	
-		<acme:menu-option code="master.menu.strategy">
-			<acme:menu-suboption code="master.menu.strategy.list" action="/any/strategy/list"/>
+		<acme:menu-option code="master.menu.any">
+			<acme:menu-suboption code="master.menu.any.strategy.list" action="/any/strategy/list"/>
+		
+		
+		
+		
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">

@@ -9,6 +9,8 @@
     <acme:form-moment code="any.strategy.form.label.endMoment" path="endMoment"/>   
     <acme:form-textarea code="any.strategy.form.label.description" path="description"/>
     <acme:form-textbox code="any.strategy.form.label.moreInfo" path="moreInfo"/>
+    <acme:form-double code="any.strategy.form.label.monthsActive" path="monthsActive"/>
+    <acme:form-double code="any.strategy.form.label.expectedPercentage" path="expectedPercentage"/>
     <acme:button code="any.strategy.form.label.tactics" action="/any/tactic/list?strategyId=${id}"/>
     <acme:button code="any.strategy.form.label.fundraiser" action="/any/fundraiser/show?id=${fundraiserId}"/>
 </acme:form>
