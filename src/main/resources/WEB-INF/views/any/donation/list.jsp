@@ -3,6 +3,6 @@
 <%@taglib prefix="acme" uri="http://acme-framework.org/"%>
 
 <acme:list>
-	<acme:list-column code="any.milestone.list.label.name" path="name"/>
-	<acme:list-column code="any.milestone.list.label.notes" path="notes"/>
+	<acme:list-column code="any.donation.list.label.name" path="name"/>
+	<acme:list-column code="any.donation.list.label.notes" path="notes"/>
 </acme:list>

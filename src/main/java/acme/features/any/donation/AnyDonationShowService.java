@@ -2,11 +2,13 @@
 package acme.features.any.donation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.client.components.principals.Any;
 import acme.client.services.AbstractService;
 import acme.entities.donation.Donation;
 
+@Service
 public class AnyDonationShowService extends AbstractService<Any, Donation> {
 
 	//Internal state
@@ -26,7 +28,9 @@ public class AnyDonationShowService extends AbstractService<Any, Donation> {
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(true);
+		boolean status;
+		status = !this.donation.getSponsorship().getDraftMode();
+		super.setAuthorised(status);
 	}
 
 	@Override

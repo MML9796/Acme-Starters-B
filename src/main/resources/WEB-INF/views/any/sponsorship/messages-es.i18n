@@ -12,5 +12,7 @@ any.sponsorship.form.label.description = Descripción
 any.sponsorship.form.label.startMoment = Comienzo
 any.sponsorship.form.label.endMoment = Fin
 any.sponsorship.form.label.moreInfo = Más Info
+any.sponsorship.form.label.monthsActive = Meses activos
+any.sponsorship.form.label.totalMoney = Dinero total
 any.sponsorship.button.donation = Donacion
 any.sponsorship.button.sponsor= Patrocinador
