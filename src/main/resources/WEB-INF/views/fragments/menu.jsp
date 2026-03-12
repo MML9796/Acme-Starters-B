@@ -18,6 +18,15 @@
 
 <acme:menu-bar>
 	<acme:menu-left>
+	
+		<acme:menu-option code="master.menu.any">
+			<acme:menu-suboption code="master.menu.any.strategy.list" action="/any/strategy/list"/>
+		
+		
+		
+		
+		</acme:menu-option>
+		
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
@@ -38,6 +47,10 @@
 		<acme:menu-option code="master.menu.consumer" access="hasRealm('Consumer')">
 			<acme:menu-suboption code="master.menu.consumer.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.fundraiser" access="hasRealm('Fundraiser')">
+			<acme:menu-suboption code="master.menu.fundraiser.strategy.list" action="/fundraiser/strategy/list"/>
+		</acme:menu-option>	
 	</acme:menu-left>
 
 	<acme:menu-right>		
