@@ -4,6 +4,7 @@ package acme.features.spokesperson.campaign;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
 import acme.entities.campaign.Campaign;
@@ -11,6 +12,7 @@ import acme.entities.milestones.Milestone;
 import acme.features.spokesperson.milestone.SpokespersonMilestoneRepository;
 import acme.realms.Spokesperson;
 
+@Service
 public class SpokespersonCampaignDeleteService extends AbstractService<Spokesperson, Campaign> {
 
 	//Internal state

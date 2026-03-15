@@ -2,11 +2,13 @@
 package acme.features.spokesperson.milestone;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
 import acme.entities.milestones.Milestone;
 import acme.realms.Spokesperson;
 
+@Service
 public class SpokespersonMilestoneDeleteService extends AbstractService<Spokesperson, Milestone> {
 
 	//Internal state
