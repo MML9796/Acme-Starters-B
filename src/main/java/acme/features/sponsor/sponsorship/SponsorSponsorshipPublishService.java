@@ -2,10 +2,12 @@
 package acme.features.sponsor.sponsorship;
 
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.donation.Donation;
 import acme.entities.sponsorship.Sponsorship;
@@ -36,13 +38,10 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 		boolean status;
 		int sponsorId, sponsorshipId;
 		Sponsorship spsh;
-		Collection<Donation> d;
 		sponsorId = super.getRequest().getPrincipal().getActiveRealm().getId();
 		sponsorshipId = super.getRequest().getData("id", int.class);
-		d = this.donationRepository.findAllDonationBySponsorshipId(sponsorshipId);
 		spsh = this.repository.findSponsorshipById(sponsorshipId);
-		status = spsh != null && spsh.getSponsor().getId() == sponsorId && spsh.getDraftMode() && !d.isEmpty();
-
+		status = spsh != null && spsh.getSponsor().getId() == sponsorId && spsh.getDraftMode();
 		super.setAuthorised(status);
 	}
 
@@ -54,6 +53,18 @@ public class SponsorSponsorshipPublishService extends AbstractService<Sponsor, S
 	@Override
 	public void validate() {
 		super.validateObject(this.sponsorship);
+		if (!super.getErrors().hasErrors()) {
+			Collection<Donation> d;
+			d = this.donationRepository.findAllDonationBySponsorshipId(this.sponsorship.getId());
+			Boolean hasDonation;
+			hasDonation = !d.isEmpty();
+			super.state(hasDonation, "*", "acme.publish.sponsorship.noHasDonation.message");
+			Date mo;
+			mo = MomentHelper.getCurrentMoment();
+			Boolean validStartMoment;
+			validStartMoment = this.sponsorship.getStartMoment().after(mo);
+			super.state(validStartMoment, "*", "acme.publish.sponsorship.validStartMoment.message");
+		}
 	}
 
 	@Override

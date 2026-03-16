@@ -6,7 +6,7 @@
 	<acme:form-textbox code="sponsor.donation.form.label.name" path="name"/>
 	<acme:form-textbox code="sponsor.donation.form.label.notes" path="notes"/>
 	<acme:form-textbox code="sponsor.donation.form.label.money" path="money"/>
-	<acme:form-textbox code="sponsor.donation.form.label.kind" path="kind"/>
+	<acme:form-select code="sponsor.donation.form.label.kind" path="kind" choices="${listaKinds}"/>
 	<jstl:choose>
 	
     <jstl:when test="${_command == 'create' }">

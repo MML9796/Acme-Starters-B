@@ -6,7 +6,7 @@
 <acme:form>
 	<acme:form-textbox code="authenticated.sponsor.form.label.address" path="address"/>
 	<acme:form-textbox code="authenticated.sponsor.form.label.im" path="im"/>
-	<acme:form-textbox code="authenticated.sponsor.form.label.gold" path="gold"/>
+	<acme:form-checkbox code="authenticated.sponsor.form.label.gold" path="gold"/>
 	
 	<jstl:if test="${_command == 'create'}">
 		<acme:submit code="authenticated.sponsor.form.button.create" action="/authenticated/sponsor/create"/>
