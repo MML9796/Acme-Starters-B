@@ -33,9 +33,13 @@ public class SpokespersonMilestoneShowService extends AbstractService<Spokespers
 		boolean status;
 		int idC;
 		int idS;
-		idC = this.milestone.getCampaign().getSpokesperson().getId();
-		idS = super.getRequest().getPrincipal().getActiveRealm().getId();
-		status = idC == idS;
+		if (this.milestone == null)
+			status = false;
+		else {
+			idC = this.milestone.getCampaign().getSpokesperson().getId();
+			idS = super.getRequest().getPrincipal().getActiveRealm().getId();
+			status = idC == idS;
+		}
 		super.setAuthorised(status);
 	}
 

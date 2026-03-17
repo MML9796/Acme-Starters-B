@@ -1,7 +1,6 @@
 
 package acme.features.spokesperson.campaign;
 
-import java.util.Collection;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Service;
 import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.campaign.Campaign;
-import acme.entities.milestones.Milestone;
 import acme.features.spokesperson.milestone.SpokespersonMilestoneRepository;
 import acme.realms.Spokesperson;
 
@@ -56,10 +54,10 @@ public class SpokespersonCampaignPublishService extends AbstractService<Spokespe
 	public void validate() {
 		super.validateObject(this.campaign);
 		if (!super.getErrors().hasErrors()) {
-			Collection<Milestone> m;
-			m = this.milestoneRepository.findAllMilestoneByCampaignId(this.campaign.getId());
+			Double m;
+			m = this.milestoneRepository.countAllMilestoneByCampaignId(this.campaign.getId());
 			Boolean haveMilestone;
-			haveMilestone = !m.isEmpty();
+			haveMilestone = m > 0;
 			super.state(haveMilestone, "*", "acme.publish.campaign.noHaveMilestone.message");
 			Date mo;
 			mo = MomentHelper.getCurrentMoment();
