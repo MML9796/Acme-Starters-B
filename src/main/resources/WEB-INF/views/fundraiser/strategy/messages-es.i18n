@@ -6,14 +6,14 @@ fundraiser.strategy.list.label.name = Nombre
 fundraiser.strategy.list.label.startMoment = Comienzo
 fundraiser.strategy.list.label.endMoment = Fin
 
-fundraiser.strategy.list.label.ticker = Ticket
-fundraiser.strategy.list.label.name = Nombre
-fundraiser.strategy.list.label.startMoment = Comienzo
-fundraiser.strategy.list.label.endMoment = Fin
-fundraiser.strategy.list.label.description = Descripción
-fundraiser.strategy.list.label.moreInfo = Más información
-fundraiser.strategy.list.label.monthsActive = Meses activos
-fundraiser.strategy.list.label.expectedPercentage = Porcentaje esperado
+fundraiser.strategy.form.label.ticker = Ticket
+fundraiser.strategy.form.label.name = Nombre
+fundraiser.strategy.form.label.startMoment = Comienzo
+fundraiser.strategy.form.label.endMoment = Fin
+fundraiser.strategy.form.label.description = Descripción
+fundraiser.strategy.form.label.moreInfo = Más información
+fundraiser.strategy.form.label.monthsActive = Meses activos
+fundraiser.strategy.form.label.expectedPercentage = Porcentaje esperado
 
 fundraiser.strategy.button.tactics = Tacticas
 fundraiser.strategy.button.publish = Publicar

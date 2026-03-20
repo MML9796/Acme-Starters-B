@@ -53,15 +53,15 @@ public class FundraiserStrategyPublishService extends AbstractService<Fundraiser
 		super.validateObject(this.strategy);
 		if (!super.getErrors().hasErrors()) {
 			int t;
-			t = this.tacticRepository.findAllTacticByStrategyId(this.strategy.getId()).size();
+			t = this.tacticRepository.findNumberTacticByStrategyId(this.strategy.getId());
 			Boolean haveTactic;
 			haveTactic = t > 0;
-			super.state(haveTactic, "*", "acme.publish.campaign.noHaveTactic.message");
+			super.state(haveTactic, "*", "acme.publish.strategy.noHaveTactic.message");
 			Date mo;
 			mo = MomentHelper.getCurrentMoment();
 			Boolean validStartMoment;
 			validStartMoment = this.strategy.getStartMoment().after(mo);
-			super.state(validStartMoment, "*", "acme.publish.campaign.validStartMoment.message");
+			super.state(validStartMoment, "*", "acme.publish.strategy.validStartMoment.message");
 
 		}
 	}

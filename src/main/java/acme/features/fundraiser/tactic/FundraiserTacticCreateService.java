@@ -35,18 +35,12 @@ public class FundraiserTacticCreateService extends AbstractService<Fundraiser, T
 	@Override
 	public void authorise() {
 		boolean status;
-		String method;
 		int fundraiserId, strategyId;
-		Strategy s;
-		method = super.getRequest().getMethod();
+		Strategy st;
 		strategyId = super.getRequest().getData("strategyId", int.class);
-		s = this.repositoryStrategy.findStrategyById(strategyId);
-		if (method.equals("GET"))
-			status = s != null;
-		else {
-			fundraiserId = super.getRequest().getPrincipal().getActiveRealm().getId();
-			status = s != null && s.getId() == strategyId && s.getFundraiser().getId() == fundraiserId && s.getDraftMode();
-		}
+		st = this.repositoryStrategy.findStrategyById(strategyId);
+		fundraiserId = super.getRequest().getPrincipal().getActiveRealm().getId();
+		status = st != null && st.getFundraiser().getId() == fundraiserId && st.getDraftMode();
 		super.setAuthorised(status);
 	}
 
