@@ -9,10 +9,10 @@
     <acme:form-moment code="fundraiser.strategy.form.label.endMoment" path="endMoment"/>   
     <acme:form-textarea code="fundraiser.strategy.form.label.description" path="description"/>
     <acme:form-url code="fundraiser.strategy.form.label.moreInfo" path="moreInfo"/>
-    
+ 
     <jstl:if test="${_command == 'show'}">
-    	<acme:form-double code="fundraiser.strategy.form.label.monthsActive" path="monthsActive"/>
-    	<acme:form-double code="fundraiser.strategy.form.label.expectedPercentage" path="expectedPercentage"/>
+    	<acme:form-double code="fundraiser.strategy.form.label.monthsActive" path="monthsActive" readonly="true"/>
+    	<acme:form-double code="fundraiser.strategy.form.label.expectedPercentage" path="expectedPercentage"  readonly="true"/>
     </jstl:if>
     
     <jstl:choose>
