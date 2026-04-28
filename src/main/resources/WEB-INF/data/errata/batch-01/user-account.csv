@@ -3,3 +3,12 @@ user-account-spokesperson-01,true,"UserIdentity{name: 'Sandra', surname: 'Spokes
 user-account-fundraiser-01,true,"UserIdentity{name: 'Juan', surname: 'Fundraiser', email: 'juan@acme.com'}",fundraiser1,fundraiser1
 user-account-sponsor-01,true,"UserIdentity{name: 'Nuria', surname: 'Martin', email: 'nuria@acme.com'}",sponsor1,sponsor1
 user-account-inventor-01,true,"UserIdentity{name: 'Elena', surname: 'Torres', email: 'elena@acme.com'}",inventor1,inventor1
+user-account-manager-1,true,"UserIdentity{name: 'Javi', surname: '王', email: 'javi@acme.com'}",manager1,manager1
+user-account-manager-2,true,"UserIdentity{name: 'Sandra', surname: 'Кузнецова', email: 'sandra@acme.com'}",manager2,manager2
+user-account-manager-3,true,"UserIdentity{name: 'Juanan', surname: 'López', email: 'juanan@acme.com'}",manager3,manager3
+user-account-manager-4,true,"UserIdentity{name: 'Nuria', surname: 'الزهرة', email: 'nuria@acme.com'}",manager4,manager4
+user-account-manager-5,true,"UserIdentity{name: 'Mauro', surname: 'Pelokk', email: 'mauro@acme.com'}",manager5,manager5
+user-account-manager-6,true,"UserIdentity{name: 'Jaime', surname: 'Terj', email: 'jaime@acme.com'}",manager6,manager6
+user-account-manager-7,true,"UserIdentity{name: 'Diego', surname: 'Jose', email: 'diego@acme.com'}",manager7,manager7
+user-account-manager-8,true,"UserIdentity{name: 'David', surname: 'Niurka', email: 'david@acme.com'}",manager8,manager8
+user-account-manager-9,true,"UserIdentity{name: 'Samuel', surname: 'Rami', email: 'samuel@acme.com'}",manager9,manager9

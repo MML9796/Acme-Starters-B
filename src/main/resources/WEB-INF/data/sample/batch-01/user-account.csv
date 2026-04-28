@@ -60,4 +60,17 @@ user-account-inventor-11,true,"UserIdentity{name: 'Erik', surname: 'Ångström',
 user-account-inventor-12,true,"UserIdentity{name: 'Sofía', surname: 'Nakamura', email: 'sofia@acme.com'}",inventor12,inventor12
 user-account-inventor-13,true,"UserIdentity{name: 'Ivan', surname: 'Petrov', email: 'ivan@acme.com'}",inventor13,inventor13
 user-account-inventor-14,true,"UserIdentity{name: 'Marta', surname: 'López', email: 'marta@acme.com'}",inventor14,inventor14
+user-account-manager-1,true,"UserIdentity{name: 'Javi', surname: '王', email: 'javi@acme.com'}",manager1,manager1
+user-account-manager-2,true,"UserIdentity{name: 'Sandra', surname: 'Кузнецова', email: 'sandra@acme.com'}",manager2,manager2
+user-account-manager-3,true,"UserIdentity{name: 'Juanan', surname: 'López', email: 'juanan@acme.com'}",manager3,manager3
+user-account-manager-4,true,"UserIdentity{name: 'Nuria', surname: 'الزهرة', email: 'nuria@acme.com'}",manager4,manager4
+user-account-manager-5,true,"UserIdentity{name: 'Mauro', surname: 'Pelokk', email: 'mauro@acme.com'}",manager5,manager5
+user-account-manager-6,true,"UserIdentity{name: 'Jaime', surname: 'Terj', email: 'jaime@acme.com'}",manager6,manager6
+user-account-manager-7,true,"UserIdentity{name: 'Diego', surname: 'Jose', email: 'diego@acme.com'}",manager7,manager7
+user-account-manager-8,true,"UserIdentity{name: 'David', surname: 'Niurka', email: 'david@acme.com'}",manager8,manager8
+user-account-manager-9,true,"UserIdentity{name: 'Samuel', surname: 'Rami', email: 'samuel@acme.com'}",manager9,manager9
+user-account-manager-10,true,"UserIdentity{name: 'Paola', surname: 'sol', email: 'paola@acme.com'}",manager10,manager10
+user-account-manager-11,true,"UserIdentity{name: 'Mana', surname: 'Manager', email: 'mana@acme.com'}",manager11,manager11
+user-account-manager-12,true,"UserIdentity{name: 'Carmen', surname: 'pade', email: 'carmen@acme.com'}",manager12,manager12
+user-account-manager-13,true,"UserIdentity{name: 'raquel', surname: 'diak', email: 'raquel@acme.com'}",manager13,manager13
 
