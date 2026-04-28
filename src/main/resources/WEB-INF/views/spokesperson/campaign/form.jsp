@@ -10,7 +10,7 @@
 	<acme:form-moment code="spokesperson.campaign.form.label.endMoment" path="endMoment"/>
 	<acme:form-url code="spokesperson.campaign.form.label.moreInfo" path="moreInfo"/>
 	
-	<jstl:if test="${_command == 'show'}">
+	<jstl:if test="${_command != 'show'}">
     <acme:form-double code="spokesperson.campaign.form.label.monthsActive" path="monthsActive" readonly="true"/>
     <acme:form-double code="spokesperson.campaign.form.label.effort" path="effort" readonly="true"/>
     </jstl:if>

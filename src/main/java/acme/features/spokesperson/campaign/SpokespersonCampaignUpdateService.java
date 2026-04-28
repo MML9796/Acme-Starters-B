@@ -55,7 +55,7 @@ public class SpokespersonCampaignUpdateService extends AbstractService<Spokesper
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.campaign, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "draftMode");
+		super.unbindObject(this.campaign, "ticker", "name", "description", "startMoment", "endMoment", "monthsActive", "effort", "moreInfo", "draftMode");
 
 	}
 
