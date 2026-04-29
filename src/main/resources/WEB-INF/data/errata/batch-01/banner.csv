@@ -1,0 +1,14 @@
+key,slogan,targetUrl,picture
+banner-01,"","https://example.com/products","https://example.com/images/banner01.png"
+banner-02," ","https://example.com/products","https://example.com/images/banner01.png"
+banner-03,"Innovate your future today with smart solutions that improve your life now. ","https://example.com/products","https://example.com/images/banner01.png"
+
+banner-04,"Innovate your future today","http://","https://example.com/images/banner01.png"
+banner-05,"Innovate your future today","ftp://","https://example.com/images/banner01.png"
+banner-06,"Innovate your future today","http://a","https://example.com/images/banner01.png"
+banner-07,"Innovate your future today","ftp://a","https://example.com/images/banner01.png"
+
+banner-08,"Innovate your future today","https://example.com/products","http://.png"
+banner-09,"Innovate your future today","https://example.com/products","ftp://.png"
+banner-10,"Innovate your future today","https://example.com/products","ftp://a.png"
+
