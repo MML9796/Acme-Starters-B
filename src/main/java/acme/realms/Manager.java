@@ -7,6 +7,7 @@ import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractRole;
 import acme.client.components.validation.Mandatory;
+import acme.validation.ValidHeader;
 import acme.validation.ValidText;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,7 +24,7 @@ public class Manager extends AbstractRole {
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
-	@ValidText
+	@ValidHeader
 	@Column
 	private String				position;
 
