@@ -1,0 +1,12 @@
+key,position,someSkills,isExecutive,key:userAccount
+manager-err-01,"Product Manager","Team management, Agile, JIRA",true,user-account-manager-1
+manager-err-02,"Lead Developer","Java, Spring Boot, React",false,user-account-manager-2
+manager-03,"Operations Manager","Logistics, Budgeting, ERP",true,user-account-manager-3
+
+manager-err-04,"","Team management, Agile, JIRA",true,user-account-manager-4
+manager-err-05,"Lead Developergughljhjhjhkjojojppppppppppppppppppppppppppppppppppppppppppppkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkaaaaaaaaaaaaa","Java, Spring Boot, React",false,user-account-manager-5
+
+manager-err-06,"Operations Manager","",true,user-account-manager-6
+manager-err-07,"Product Manager","Team management, Agile, JIRpA...........................................................................................................................................................................................................................lpploikuuhh",true,user-account-manager-7
+
+manager-err-08,"Lead Developer","Java, Spring Boot, React",null,user-account-manager-8

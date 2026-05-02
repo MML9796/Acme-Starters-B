@@ -1,0 +1,21 @@
+key,position,someSkills,isExecutive,key:userAccount
+manager-01,"Product Manager","Team management, Agile, JIRA",true,user-account-manager-1
+
+manager-04,"P","Team management, Agile, JIRA",true,user-account-manager-4
+manager-05,"Tech Expansion 2025 - Global Innovation & Future Growth Summit","Java, Spring Boot, React",false,user-account-manager-5
+manager-06,"Pp","Team management, Agile, JIRA",true,user-account-manager-6
+manager-07,"Tech Expansion 2025 - Global Innovation & Future Growth Summi","Java, Spring Boot, React",false,user-account-manager-7
+manager-14,"<marquee>Hacked</marquee> <script>alert(‘Hacked!’);</script> '' or 'A' = 'A","Team management, Agile, JIRA",true,user-account-manager-14
+manager-15,"โลเร็ม อิปซัม 洛伦·伊普森 ","Java, Spring Boot, React",false,user-account-manager-15
+
+
+
+manager-08,"Operations Manager","Lo",true,user-account-manager-8
+manager-09,"Product Manager","Tea management, Agile, JIRA..........................................................................................................................................................................................................................lpploikh",true,user-account-manager-9
+manager-10,"Operations Manager","L",true,user-account-manager-10
+manager-11,"Product Manager","Team management, Agile, JIRA..........................................................................................................................................................................................................................lpploikh",true,user-account-manager-11
+manager-02,"Lead Developer","<marquee>Hacked</marquee> <script>alert(‘Hacked!’);</script> '' or 'A' = 'A",false,user-account-manager-2
+manager-03,"Operations Manager","โลเร็ม อิปซัม 洛伦·伊普森 ",true,user-account-manager-3
+
+manager-12,"Lead Developer","Java, Spring Boot, React",false,user-account-manager-12
+manager-13,"Operations Manager","Logistics, Budgeting, ERP",true,user-account-manager-13
