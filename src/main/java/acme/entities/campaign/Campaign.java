@@ -20,6 +20,7 @@ import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
+import acme.entities.projects.Project;
 import acme.realms.Spokesperson;
 import acme.validation.ValidCampaign;
 import acme.validation.ValidHeader;
@@ -105,5 +106,10 @@ public class Campaign extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Spokesperson spokesperson;
+	private Spokesperson	spokesperson;
+
+	@Optional
+	@Valid
+	@ManyToOne(optional = true)
+	private Project			project;
 }

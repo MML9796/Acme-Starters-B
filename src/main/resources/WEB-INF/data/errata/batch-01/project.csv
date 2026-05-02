@@ -1,0 +1,23 @@
+key,title,key-words,description,kick-off-moment,close-out-moment,draft-mode,key:manager
+# title
+project-01,"",example,example,2025/09/01 10:00,2025/09/01 12:00,true,manager-01
+project-02,null,example,example,2025/09/01 10:00,2025/09/01 12:00,true,manager-01
+project-03,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tem",example,example,2025/09/01 10:00,2025/09/01 12:00,true,manager-01
+# key-words
+project-04,example,"",example,2025/09/01 10:00,2025/09/01 12:00,true,manager-01
+project-05,example,null,example,2025/09/01 10:00,2025/09/01 12:00,true,manager-01
+project-06,example,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",example,2025/09/01 10:00,2025/09/01 12:00,true,manager-01
+# description
+project-07,example,example,"",2025/09/01 10:00,2025/09/01 12:00,true,manager-01
+project-08,example,example,null,2025/09/01 10:00,2025/09/01 12:00,true,manager-01
+project-09,example,example,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do: eiusmod tempor incididunt ut labore et dolore magna aliqua! Ut enim ad minim veniam? Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",2025/09/01 10:00,2025/09/01 12:00,true,manager-01
+# moments
+project-10,example,example,example,2025/09/01 12:00,2025/09/01 10:00,true,manager-01
+project-11,example,example,example,2000/09/01 10:00,2000/09/01 12:00,true,manager-01
+project-12,example,example,example,"",2025/09/01 12:00,true,manager-01
+project-13,example,example,example,null,2025/09/01 12:00,true,manager-01
+project-14,example,example,example,2025/09/01 10:00,"",true,manager-01
+project-15,example,example,example,2025/09/01 10:00,null,true,manager-01
+# draft-mode
+project-16,example,example,example,2025/09/01 10:00,2025/09/01 12:00,"",manager-01
+project-17,example,example,example,2025/09/01 10:00,2025/09/01 12:00,null,manager-01

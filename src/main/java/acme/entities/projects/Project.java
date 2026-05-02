@@ -1,8 +1,8 @@
 
-package acme.entities.audit_reports;
+package acme.entities.projects;
 
-import java.time.temporal.ChronoUnit;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,97 +16,91 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.validation.Mandatory;
-import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
-import acme.client.components.validation.ValidNumber;
-import acme.client.components.validation.ValidUrl;
-import acme.client.helpers.MomentHelper;
-import acme.constraints.ValidAuditReport;
-import acme.realms.Auditor;
+import acme.constraints.ValidProject;
+import acme.entities.campaign.Campaign;
+import acme.entities.invention.Invention;
+import acme.entities.strategy.Strategy;
+import acme.realms.Manager;
 import acme.validation.ValidHeader;
 import acme.validation.ValidText;
-import acme.validation.ValidTicker;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-@ValidAuditReport
-public class AuditReport extends AbstractEntity {
+@ValidProject
+public class Project extends AbstractEntity {
 
 	// Serialisation version --------------------------------------------------
 
-	private static final long		serialVersionUID	= 1L;
+	private static final long	serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
-	@ValidTicker
-	@Column(unique = true)
-	private String					ticker;
-
-	@Mandatory
 	@ValidHeader
 	@Column
-	private String					name;
+	private String				title;
 
 	@Mandatory
 	@ValidText
 	@Column
-	private String					description;
+	private String				keyWords;
 
 	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date					startMoment;
-
-	@Mandatory
-	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Temporal(TemporalType.TIMESTAMP)
-	private Date					endMoment;
-
-	@Optional
-	@ValidUrl
+	@ValidText
 	@Column
-	private String					moreInfo;
+	private String				description;
+
+	@Mandatory
+	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				kickOffMoment;
+
+	@Mandatory
+	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date				closeOutMoment;
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean					draftMode;
+	private Boolean				draftMode;
 
 	// Derived attributes -----------------------------------------------------
 
 	@Transient
 	@Autowired
-	private AuditReportRepository	repository;
+	private ProjectRepository	repository;
 
 
 	@Mandatory
 	@Valid
 	@Transient
-	public Double getMonthsActive() {
+	public Double getEffort() {
+		// Very inefficient, but needed since monthsActive is transient
 		Double result;
 
-		if (this.getStartMoment() != null && this.getEndMoment() != null)
-			result = MomentHelper.computeDifference(this.getStartMoment(), this.getEndMoment(), ChronoUnit.MONTHS);
-		else
-			result = null;
+		Double totalEffort;
+		List<Invention> inventions;
+		List<Campaign> campaigns;
+		List<Strategy> strategies;
 
-		return result;
-	}
+		inventions = this.repository.getProjectInventionsById(this.getId());
+		campaigns = this.repository.getProjectCampaignsById(this.getId());
+		strategies = this.repository.getProjectStrategiesById(this.getId());
+		totalEffort = inventions.stream().mapToDouble(i -> i.getMonthsActive()).sum() + campaigns.stream().mapToDouble(c -> c.getMonthsActive()).sum() + strategies.stream().mapToDouble(s -> s.getMonthsActive()).sum();
 
-	@Mandatory
-	@ValidNumber(min = 0)
-	@Transient
-	public Integer getHours() {
-		Integer result;
+		Integer involvedCount;
 		Integer wrapper;
 
-		wrapper = this.repository.computeHours(this.getId());
-		result = wrapper == null ? 0 : wrapper;
+		wrapper = this.repository.getProjectMemberCountById(this.getId());
+		involvedCount = wrapper == null ? 0 : wrapper;
+
+		result = involvedCount > 0 ? totalEffort / involvedCount : null;
 
 		return result;
 	}
@@ -117,11 +111,6 @@ public class AuditReport extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Auditor auditor;
-
-	//	@Mandatory
-	//	@Valid
-	//	@ManyToOne(optional = true)
-	//	private Project project;
+	private Manager manager;
 
 }

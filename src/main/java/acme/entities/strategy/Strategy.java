@@ -20,6 +20,7 @@ import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidScore;
 import acme.client.components.validation.ValidUrl;
+import acme.entities.projects.Project;
 import acme.realms.Fundraiser;
 import acme.validation.ValidHeader;
 import acme.validation.ValidStrategy;
@@ -101,6 +102,11 @@ public class Strategy extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Fundraiser fundraiser;
+	private Fundraiser	fundraiser;
+
+	@Optional
+	@Valid
+	@ManyToOne(optional = true)
+	private Project		project;
 
 }
