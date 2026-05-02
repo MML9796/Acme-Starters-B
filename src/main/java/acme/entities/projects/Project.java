@@ -100,7 +100,8 @@ public class Project extends AbstractEntity {
 		wrapper = this.repository.getProjectMemberCountById(this.getId());
 		involvedCount = wrapper == null ? 0 : wrapper;
 
-		result = involvedCount > 0 ? totalEffort / involvedCount : null;
+		// SOLUCIÓN: Cambiamos el null por 0.0 para que no salte el @Mandatory
+		result = involvedCount > 0 ? totalEffort / involvedCount : 0.0;
 
 		return result;
 	}
