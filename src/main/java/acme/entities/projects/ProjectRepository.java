@@ -21,7 +21,7 @@ public interface ProjectRepository extends AbstractRepository {
 	@Query("select s from Strategy s where s.project.id = :id")
 	List<Strategy> getProjectStrategiesById(int id);
 
-	@Query("select count(pm) from ProjectMember pm where pm.project.id = :id")
+	@Query("select count(pm) from MemberProject pm where pm.project.id = :id")
 	Integer getProjectMemberCountById(int id);
 
 }
