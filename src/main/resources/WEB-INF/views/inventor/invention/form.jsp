@@ -10,7 +10,7 @@
 	<acme:form-moment code="inventor.invention.form.label.endMoment" path="endMoment"/>
 	<acme:form-url code="inventor.invention.form.label.moreInfo" path="moreInfo"/>
 
-	<jstl:if test="${_command == 'show'}">
+	<jstl:if test="${_command != 'create'}">
     <acme:form-double code="inventor.invention.form.label.monthsActive" path="monthsActive" readonly="true"/>
     <acme:form-double code="inventor.invention.form.label.cost" path="cost" readonly="true"/>
     </jstl:if>

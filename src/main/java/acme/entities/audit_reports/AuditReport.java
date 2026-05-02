@@ -119,4 +119,9 @@ public class AuditReport extends AbstractEntity {
 	@ManyToOne(optional = false)
 	private Auditor auditor;
 
+	//	@Mandatory
+	//	@Valid
+	//	@ManyToOne(optional = true)
+	//	private Project project;
+
 }
