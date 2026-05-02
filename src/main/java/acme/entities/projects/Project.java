@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
@@ -21,6 +22,7 @@ import acme.constraints.ValidProject;
 import acme.entities.campaign.Campaign;
 import acme.entities.invention.Invention;
 import acme.entities.strategy.Strategy;
+import acme.realms.Manager;
 import acme.validation.ValidHeader;
 import acme.validation.ValidText;
 import lombok.Getter;
@@ -105,15 +107,10 @@ public class Project extends AbstractEntity {
 
 	// Relationships ----------------------------------------------------------
 
-	/*
-	 * Uncomment once manager exists
-	 * 
-	 * @Mandatory
-	 * 
-	 * @Valid
-	 * 
-	 * @ManyToOne(optional = false)
-	 * private Manager manager;
-	 */
+
+	@Mandatory
+	@Valid
+	@ManyToOne(optional = false)
+	private Manager manager;
 
 }

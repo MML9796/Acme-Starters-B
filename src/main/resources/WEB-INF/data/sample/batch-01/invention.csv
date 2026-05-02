@@ -1,5 +1,5 @@
-key,key:inventor,ticker,name,description,startMoment,endMoment,moreInfo,draftMode
-invention-01,inventor-01,"AB01-ENERG1","Solar Battery Pack","Industrial solar battery pack to store renewable energy","2026/04/15 10:00","2026/10/15 10:00","https://example.com/product1",false
+key,key:inventor,ticker,name,description,startMoment,endMoment,moreInfo,draftMode,project
+invention-01,inventor-01,"AB01-ENERG1","Solar Battery Pack","Industrial solar battery pack to store renewable energy","2026/04/15 10:00","2026/10/15 10:00","https://example.com/product1",false,project-01
 
 invention-02,inventor-01,"AB01-ENERG","Solar Battery Pack","Industrial solar battery pack to store renewable energy","2026/04/15 10:00","2026/10/15 10:00","https://example.com/product1",false
 invention-03,inventor-01,"AB01-111111","Solar Battery Pack","Industrial solar battery pack to store renewable energy","2026/04/15 10:00","2026/10/15 10:00","https://example.com/product1",false

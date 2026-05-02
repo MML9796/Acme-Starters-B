@@ -20,6 +20,7 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
+import acme.entities.projects.Project;
 import acme.realms.Inventor;
 import acme.validation.ValidHeader;
 import acme.validation.ValidInvention;
@@ -117,10 +118,10 @@ public class Invention extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Inventor inventor;
+	private Inventor	inventor;
 
-	//	@Mandatory
-	//	@Valid
-	//	@ManyToOne(optional = true)
-	//	private Project project;
+	@Optional
+	@Valid
+	@ManyToOne(optional = true)
+	private Project		project;
 }
