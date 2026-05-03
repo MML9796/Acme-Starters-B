@@ -20,6 +20,7 @@ import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidMoment.Constraint;
 import acme.client.components.validation.ValidUrl;
+import acme.entities.projects.Project;
 import acme.realms.Sponsor;
 import acme.validation.ValidHeader;
 import acme.validation.ValidMoney2;
@@ -112,10 +113,10 @@ public class Sponsorship extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Sponsor sponsor;
+	private Sponsor	sponsor;
 
-	//	@Mandatory
-	//	@Valid
-	//	@ManyToOne(optional = true)
-	//	private Project project;
+	@Optional
+	@Valid
+	@ManyToOne(optional = true)
+	private Project	project;
 }

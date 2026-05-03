@@ -13,9 +13,10 @@
 master.menu.any = Cualquiera
 master.menu.invention.list = Lista de Invenciones
 master.menu.campaign.list = Lista de Campañas
-master.menu.any.strategy.list = Lista de estrategias
+master.menu.any.strategy.list = Lista de Sstrategias
 master.menu.sponsorship.list = Lista de Patrocinios
-master.menu.any.audit-report.list = Informes de auditoría publicados
+master.menu.any.audit-report.list = Lista de Informes de Auditoría
+master.menu.any.project.list = Lista de Proyectos
 
 # master.menu.anonymous #######################################################
 

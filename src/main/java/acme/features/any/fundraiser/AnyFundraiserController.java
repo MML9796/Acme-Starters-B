@@ -18,5 +18,6 @@ public class AnyFundraiserController extends AbstractController<Any, Fundraiser>
 		super.setMediaType(MediaType.TEXT_HTML);
 
 		super.addBasicCommand("show", AnyFundraiserShowService.class);
+		super.addBasicCommand("list", AnyFundraiserListService.class);
 	}
 }

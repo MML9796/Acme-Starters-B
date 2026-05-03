@@ -23,5 +23,6 @@ public class SponsorSponsorshipController extends AbstractController<Sponsor, Sp
 		super.addBasicCommand("create", SponsorSponsorshipCreateService.class);
 		super.addBasicCommand("delete", SponsorSponsorshipDeleteService.class);
 		super.addCustomCommand("publish", "update", SponsorSponsorshipPublishService.class);
+		super.addCustomCommand("unassign", "delete", SponsorSponsorshipUnassignService.class);
 	}
 }
