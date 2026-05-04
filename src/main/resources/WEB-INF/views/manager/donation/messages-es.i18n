@@ -1,0 +1,10 @@
+manager.donation.list.title = Lista de Donaciones
+manager.donation.form.title = Detalles de la Donación
+
+manager.donation.list.label.name = Nombre
+manager.donation.list.label.money = Money
+
+manager.donation.form.label.name = Nombre
+manager.donation.form.label.notes = Notas
+manager.donation.form.label.money = Dinero
+manager.donation.form.label.kind = Tipo

@@ -1,0 +1,12 @@
+
+manager.memberProject.list.label.username = Nombre de usuario
+manager.memberProject.list.label.bank = Cuenta bancaria
+manager.memberProject.list.label.agent = Agente
+
+manager.memberProject.form.label.selectFundraiser = Seleccione un Fundraiser sin asignar
+manager.memberProject.form.label.assignedMember = Miembro asignado
+
+manager.memberProject.button.assignNew = Asignar Nuevo
+manager.memberProject.button.assign = Asignar
+manager.memberProject.button.unassign = Desvincular
+manager.memberProject.button.return = Volver a la lista

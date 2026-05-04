@@ -1,0 +1,18 @@
+manager.audit-report.form.title = Audit report form
+manager.audit-report.list.title = Listing of audit reports
+
+manager.audit-report.form.label.ticker = Ticker:
+manager.audit-report.form.label.name = Name:
+manager.audit-report.form.label.description = Description:
+manager.audit-report.form.label.startMoment = Start:
+manager.audit-report.form.label.endMoment = End:
+manager.audit-report.form.label.moreInfo = More info: (Optional)
+manager.audit-report.form.label.monthsActive = Months Active:
+manager.audit-report.form.label.hours = Hours:
+manager.audit-report.form.label.auditor = Auditor
+manager.audit-report.form.label.audit-sections = Report sections
+
+manager.audit-report.list.label.ticker = Ticker
+manager.audit-report.list.label.name = Name
+manager.audit-report.list.label.startMoment = Start
+manager.audit-report.list.label.endMoment = End

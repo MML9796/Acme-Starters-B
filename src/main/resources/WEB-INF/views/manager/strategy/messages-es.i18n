@@ -1,0 +1,19 @@
+manager.strategy.list.title = Lista de estrategias
+manager.strategy.form.title = Detalles de la estrategia
+
+manager.strategy.list.label.ticker = Ticket
+manager.strategy.list.label.name = Nombre
+manager.strategy.list.label.startMoment = Comienzo
+manager.strategy.list.label.endMoment = Fin
+
+manager.strategy.form.label.ticker = Ticket
+manager.strategy.form.label.name = Nombre
+manager.strategy.form.label.startMoment = Comienzo
+manager.strategy.form.label.endMoment = Fin
+manager.strategy.form.label.description = Descripción
+manager.strategy.form.label.moreInfo = Más información
+manager.strategy.form.label.monthsActive = Meses activos
+manager.strategy.form.label.expectedPercentage = Porcentaje esperado
+
+manager.strategy.form.label.tactics = Tacticas
+manager.strategy.form.label.fundraiser = Recaudador
