@@ -41,5 +41,9 @@ public class AnyAuditReportShowService extends AbstractService<Any, AuditReport>
 	@Override
 	public void unbind() {
 		super.unbindObject(this.auditReport, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "hours", "auditor");
+		if (this.auditReport.getProject() != null && this.auditReport.getAuditor().getUserAccount().getId() == super.getRequest().getPrincipal().getAccountId())
+			super.unbindGlobal("projectId", this.auditReport.getProject().getId());
+		if (this.auditReport.getProject() != null)
+			super.unbindGlobal("title", this.auditReport.getProject().getTitle());
 	}
 }

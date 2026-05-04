@@ -52,6 +52,8 @@ public class SponsorSponsorshipAssignmentCreateService extends AbstractService<S
 	@Override
 	public void validate() {
 		super.validateObject(this.sponsorShipAssigment);
+		boolean hasSponsorship = this.sponsorShipAssigment.getSponsorshipId() != 0;
+		super.state(hasSponsorship, "sponsorshipId", "sponsor.sponsorship-assignment.error.sponsorshipId.required");
 	}
 
 	@Override

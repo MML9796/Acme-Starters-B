@@ -12,8 +12,15 @@
 	<acme:form-url code="any.audit-report.form.label.moreInfo" path="moreInfo"/>
 	<acme:form-double code="any.audit-report.form.label.monthsActive" path="monthsActive"/>
 	<acme:form-integer code="any.audit-report.form.label.hours" path="hours"/>
+	<jstl:if test="${title != null}">
+	<acme:form-textbox code="any.audit-report.form.label.project" path="title"/>
+	</jstl:if>
 	
 	<acme:button code="any.audit-report.form.label.auditor" action="/any/auditor/show?id=${auditor.id}"/>
 	<acme:button code="any.audit-report.form.label.audit-sections" action="/any/audit-section/list?auditReportId=${id}"/>
+	
+	<jstl:if test="${projectId != null}">
+		<acme:submit code="auditor.audit-report.button.unassign" action="/auditor/audit-report/unassign?auditReportId=${id}"/>
+	</jstl:if>
 </acme:form>
 

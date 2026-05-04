@@ -20,6 +20,4 @@ any.project.button.invention= Invenciones
 any.project.button.strategy= Estrategias
 any.project.button.campaign= Campañas
 any.project.button.sponsorship = Patrocinios
-any.project.button.sponsor.create = Añadir patrocinios
-any.project.button.sponsor.list = Mis patrocinios
-any.project.button.auditor = Añadir informes de auditoria
+any.project.button.audit-report = Informes de auditoria

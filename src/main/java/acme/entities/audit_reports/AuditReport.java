@@ -23,6 +23,7 @@ import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.client.helpers.MomentHelper;
 import acme.constraints.ValidAuditReport;
+import acme.entities.projects.Project;
 import acme.realms.Auditor;
 import acme.validation.ValidHeader;
 import acme.validation.ValidText;
@@ -117,11 +118,11 @@ public class AuditReport extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@ManyToOne(optional = false)
-	private Auditor auditor;
+	private Auditor	auditor;
 
-	//	@Mandatory
-	//	@Valid
-	//	@ManyToOne(optional = true)
-	//	private Project project;
+	@Optional
+	@Valid
+	@ManyToOne(optional = true)
+	private Project	project;
 
 }
