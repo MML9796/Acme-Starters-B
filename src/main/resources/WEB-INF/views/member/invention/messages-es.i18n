@@ -1,0 +1,5 @@
+member.invention.list.title = Lista de inventos
+member.invention.form.title = Detalles del invento
+
+member.project.button.inventor.create = Asignar invención
+member.invention.button.unassign = Desasignar invención

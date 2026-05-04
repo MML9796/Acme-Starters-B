@@ -1,0 +1,27 @@
+member.project.list.title = Project list
+member.project.form.title = Project details
+
+member.project.list.label.title = Title
+member.project.list.label.keyWords = Key words
+member.project.list.label.kickOffMoment = Kick off moment
+member.project.list.label.closeOutMoment = Close out moment
+
+member.project.form.label.title = Title
+member.project.form.label.keyWords = Key words
+member.project.form.label.description = Description
+member.project.form.label.kickOffMoment = Kick off moment
+member.project.form.label.closeOutMoment = Close out moment
+member.project.form.label.effort = Effort
+
+member.project.button.inventions = Inventions
+member.project.button.campaigns = Campaigns
+member.project.button.strategies = Strategies
+member.project.button.inventors = Inventors
+member.project.button.spokesperson = Spokespersons
+member.project.button.fundraiser = Fundraisers
+
+
+
+
+
+

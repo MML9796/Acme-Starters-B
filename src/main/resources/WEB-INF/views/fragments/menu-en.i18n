@@ -109,3 +109,7 @@ master.menu.campaign = Campaign
 #master.menu.sponsor ##############################################
 master.menu.sponsor = Sponsor
 master.menu.sponsor.sponsorship.list = My sponsorships
+
+#master.menu.member ##############################################
+master.menu.member = Member
+master.menu.member.project.list = My Projects
