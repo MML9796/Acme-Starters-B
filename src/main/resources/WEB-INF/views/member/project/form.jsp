@@ -16,6 +16,7 @@
     <acme:button code="member.project.button.inventors" action="/member/inventor/list?projectId=${id}"/>
     <acme:button code="member.project.button.spokesperson" action="/member/spokesperson/list?projectId=${id}"/>
     <acme:button code="member.project.button.fundraiser" action="/member/fundraiser/list?projectId=${id}"/>
+    <acme:button code="any.project.button.manager" action="/any/manager/show?id=${managerId}"/>
 
  
 </acme:form>
