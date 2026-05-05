@@ -1,6 +1,6 @@
 # messages-en.i18n
 manager.spokesperson.form.title = Spokesperson form
-manager.spokesperson.form.title =List of Project Spokesperson 
+manager.spokesperson.list.title =List of Project Spokesperson 
 
 manager.spokesperson.list.label.username = Username
 manager.spokesperson.list.label.cv = CV

@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
-import acme.features.member.project.MemberProjectRepository;
 import acme.realms.Fundraiser;
 import acme.realms.Member;
 
@@ -15,8 +14,6 @@ public class MemberFundraiserShowService extends AbstractService<Member, Fundrai
 	@Autowired
 	private MemberFundraiserRepository	repository;
 
-	@Autowired
-	private MemberProjectRepository		projectRepository;
 	private Fundraiser					fundraiser;
 
 

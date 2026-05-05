@@ -35,7 +35,7 @@ public class ManagerInventorShowService extends AbstractService<Manager, Invento
 
 	@Override
 	public void unbind() {
-		super.unbindObject(this.inventor, "userAccount.username", "bank", "statement", "agent");
+		super.unbindObject(this.inventor, "userAccount.username", "bio", "keyWords", "licensed");
 
 		if (super.getRequest().hasData("inventionId")) {
 			int campaignId = super.getRequest().getData("inventionId", int.class);

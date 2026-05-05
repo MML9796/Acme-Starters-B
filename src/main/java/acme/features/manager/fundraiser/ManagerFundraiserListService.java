@@ -43,7 +43,10 @@ public class ManagerFundraiserListService extends AbstractService<Manager, Fundr
 
 	@Override
 	public void unbind() {
+		int projectId = super.getRequest().getData("projectId", int.class);
+		Project project = this.projectRepository.findProjectById(projectId);
 		super.unbindObjects(this.fundraisers, "userAccount.username", "bank", "statement", "agent");
-		super.unbindGlobal("projectId", super.getRequest().getData("projectId", int.class));
+		super.unbindGlobal("projectId", projectId);
+		super.unbindGlobal("draftMode", project.getDraftMode());
 	}
 }
