@@ -69,6 +69,10 @@
 			<acme:menu-suboption code="master.menu.auditor.audit-report.list" action="/auditor/audit-report/list"/>
 			<acme:menu-suboption code="master.menu.auditor.project.list" action="/auditor/project/list"/>
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.member" access="hasRealm('Member')">
+			<acme:menu-suboption code="master.menu.member.project.list" action="/member/project/list"/>
+		</acme:menu-option>
 	</acme:menu-left>
 
 	<acme:menu-right>

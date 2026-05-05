@@ -1,0 +1,26 @@
+member.project.list.title = Lista de proyectos
+member.project.form.title = Detalles del proyecto
+
+member.project.list.label.title = Título
+member.project.list.label.keyWords = Palabras clave
+member.project.list.label.kickOffMoment = Puesta en marcha
+member.project.list.label.closeOutMoment = Fecha de finalización
+
+member.project.form.label.title = Título
+member.project.form.label.keyWords = Palabras clave
+member.project.form.label.description = Descripción
+member.project.form.label.kickOffMoment = Puesta en marcha
+member.project.form.label.closeOutMoment = Fecha de finalización
+member.project.form.label.effort = Esfuerzo
+
+member.project.button.inventions = Invenciones
+member.project.button.campaigns = Campañas
+member.project.button.strategies = Estrategias
+member.project.button.inventors = Inventores
+member.project.button.spokesperson = Portavoces
+member.project.button.fundraiser = Recaudadores
+
+member.project.button.manager = Manager
+
+
+

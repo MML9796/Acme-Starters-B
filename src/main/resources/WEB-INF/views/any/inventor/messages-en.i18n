@@ -4,6 +4,11 @@ any.inventor.list.title = Inventor list
 any.inventor.list.label.username = Username
 any.inventor.list.label.bio = Bio
 
+any.inventor.list.label.username = Username
+any.inventor.list.label.bio = Bio
+any.inventor.list.label.keyWords = Key words
+any.inventor.list.label.licensed = Licensed
+
 any.inventor.form.label.username = Username
 any.inventor.form.label.bio = Bio
 any.inventor.form.label.keyWords = Key words
