@@ -14,5 +14,6 @@
 	<acme:form-integer code="manager.audit-report.form.label.hours" path="hours"/>
 	
 	<acme:button code="manager.audit-report.form.label.audit-sections" action="/manager/audit-section/list?auditReportId=${id}"/>
+	<acme:button code="manager.audit-report.form.label.auditor" action="/manager/auditor/show?auditReportId=${id}"/>
 </acme:form>
 

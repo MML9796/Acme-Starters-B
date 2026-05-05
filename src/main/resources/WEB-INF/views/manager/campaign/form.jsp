@@ -12,4 +12,5 @@
 	<acme:form-double code="manager.campaign.form.label.effort" path="effort"/>
 	<acme:form-textbox code="manager.campaign.form.label.moreInfo" path="moreInfo"/>
 	<acme:button code="manager.campaign.button.milestone" action="/manager/milestone/list?campaignId=${id}"/>
+	<acme:button code="manager.campaign.button.spokesperson" action="/manager/spokesperson/show?campaignId=${campaignId}"/>
 </acme:form>

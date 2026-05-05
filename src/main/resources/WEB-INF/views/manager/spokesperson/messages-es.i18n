@@ -1,0 +1,12 @@
+# messages-es.i18n
+#
+manager.spokesperson.form.title = Formulario de Portavoz
+manager.spokesperson.form.title = Lista de Portavoz del Proyecto
+
+manager.spokesperson.list.label.username = Nombre de Usuario
+manager.spokesperson.list.label.cv = CV
+
+manager.spokesperson.form.label.username = Nombre de Usuario
+manager.spokesperson.form.label.cv = CV
+manager.spokesperson.form.label.achievements = Logro
+manager.spokesperson.form.label.licensed = Licencia

@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
 import acme.entities.campaign.Campaign;
+import acme.entities.projects.Project;
+import acme.features.manager.project.ManagerProjectRepository;
 import acme.realms.Manager;
 
 @Service
@@ -16,17 +18,26 @@ public class ManagerCampaignListService extends AbstractService<Manager, Campaig
 	@Autowired
 	private ManagerCampaignRepository	repository;
 
+	@Autowired
+	private ManagerProjectRepository	projectRepository;
 	private Collection<Campaign>		campaigns;
 
 
 	@Override
 	public void load() {
-		this.campaigns = this.repository.findAllCampaign();
+		int projectId = super.getRequest().getData("projectId", int.class);
+		this.campaigns = this.repository.findCampaignsByProjectId(projectId);
 	}
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(true);
+		int projectId = super.getRequest().getData("projectId", int.class);
+		Project p = this.projectRepository.findProjectById(projectId);
+
+		int managerID = super.getRequest().getPrincipal().getAccountId();
+		boolean status = p != null && p.getManager().getUserAccount().getId() == managerID;
+
+		super.setAuthorised(status);
 	}
 
 	@Override

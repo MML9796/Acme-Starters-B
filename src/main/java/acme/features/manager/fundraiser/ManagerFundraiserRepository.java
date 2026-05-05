@@ -15,8 +15,12 @@ public interface ManagerFundraiserRepository extends AbstractRepository {
 	@Query("select f from Fundraiser f where f.id = :id")
 	Fundraiser findOneFundraiserById(int id);
 
-	@Query("select f from Fundraiser f where f.id in (select mp.member.id from MemberProject mp where mp.project.id = :projectId)")
+	@Query("select f from Fundraiser f where f.userAccount.id in (" + "select ua.id from MemberProject mp " + "join mp.member m " + "join m.userAccount ua " + "where mp.project.id = :projectId" + ")")
 	Collection<Fundraiser> findAllFundraiser(int projectId);
-	@Query("select f from Fundraiser f where f.id not in (select mp.member.id from MemberProject mp where mp.project.id = :projectId)")
+
+	@Query("select f from Fundraiser f where f.userAccount.id not in (" + "select ua.id from MemberProject mp " + "join mp.member m " + "join m.userAccount ua " + "where mp.project.id = :projectId" + ")")
 	Collection<Fundraiser> findUnassignedFundraisers(int projectId);
+
+	@Query("select s.fundraiser from Strategy s where s.id = :strategyId")
+	Fundraiser findOneFundraiserByStrategyId(int strategyId);
 }

@@ -18,4 +18,7 @@ public interface ManagerInventionRepository extends AbstractRepository {
 	@Query("select i from Invention i")
 	Collection<Invention> findAllInventions();
 
+	@Query("select i from Invention i where i.project.id = :projectId")
+	Collection<Invention> findInventionsByProjectId(int projectId);
+
 }

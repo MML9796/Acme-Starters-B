@@ -31,6 +31,6 @@ public class ManagerStrategyShowService extends AbstractService<Manager, Strateg
 	@Override
 	public void unbind() {
 		super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "expectedPercentage", "draftMode");
-		super.unbindGlobal("id", this.strategy.getId());
+		super.unbindGlobal("strategyId", this.strategy.getId());
 	}
 }

@@ -1,12 +1,19 @@
+manager.fundraiser.list.title = List of Project Fundraisers
+manager.fundraiser.form.title =Fundraiser
 
 manager.memberProject.list.label.username = Username
 manager.memberProject.list.label.bank = Bank Account
 manager.memberProject.list.label.agent = Agent
 
-manager.memberProject.form.label.selectFundraiser = Select unassigned Fundraiser
 manager.memberProject.form.label.assignedMember = Assigned Member
 
 manager.memberProject.button.assignNew = Assign New
 manager.memberProject.button.assign = Assign
 manager.memberProject.button.unassign = Unassign
 manager.memberProject.button.return = Return to list
+
+manager.fundraiser.form.label.username = Username
+manager.fundraiser.form.label.bank = Bank
+manager.fundraiser.form.label.agent = Agent
+manager.memberProject.button.unAssignNew= Unassign
+manager.fundraiser.form.label.statement = Statement

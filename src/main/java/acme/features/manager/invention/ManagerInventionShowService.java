@@ -31,6 +31,6 @@ public class ManagerInventionShowService extends AbstractService<Manager, Invent
 	@Override
 	public void unbind() {
 		super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "monthsActive", "cost", "moreInfo", "draftMode");
-		super.unbindGlobal("id", this.invention.getId());
+		super.unbindGlobal("inventionId", this.invention.getId());
 	}
 }

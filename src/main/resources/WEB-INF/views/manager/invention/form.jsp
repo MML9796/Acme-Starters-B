@@ -12,4 +12,6 @@
 	<acme:form-money code="manager.invention.form.label.cost" path="cost"/>
 	<acme:form-url code="manager.invention.form.label.moreInfo" path="moreInfo"/>
 	<acme:button code="manager.invention.button.parts" action="/manager/part/list?inventionId=${id}"/>
+	<acme:button code="manager.invention.button.inventor" action="/manager/inventor/show?inventionId=${inventionId}"/>
+	
 </acme:form>

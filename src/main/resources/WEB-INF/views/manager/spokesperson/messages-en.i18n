@@ -1,0 +1,11 @@
+# messages-en.i18n
+manager.spokesperson.form.title = Spokesperson form
+manager.spokesperson.form.title =List of Project Spokesperson 
+
+manager.spokesperson.list.label.username = Username
+manager.spokesperson.list.label.cv = CV
+
+manager.spokesperson.form.label.username = Username
+manager.spokesperson.form.label.cv = CV
+manager.spokesperson.form.label.achievements = Achievements
+manager.spokesperson.form.label.licensed = Licensed

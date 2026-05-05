@@ -12,4 +12,5 @@
     <acme:form-double code="manager.strategy.form.label.monthsActive" path="monthsActive"/>
     <acme:form-double code="manager.strategy.form.label.expectedPercentage" path="expectedPercentage"/>
     <acme:button code="manager.strategy.form.label.tactics" action="/manager/tactic/list?strategyId=${id}"/>
+	<acme:button code="manager.strategy.button.fundraiser" action="/manager/fundraiser/show?strategyId=${strategyId}"/>
 </acme:form>

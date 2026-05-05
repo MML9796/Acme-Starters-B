@@ -30,5 +30,6 @@ public class ManagerCampaignShowService extends AbstractService<Manager, Campaig
 	@Override
 	public void unbind() {
 		super.unbindObject(this.campaign, "ticker", "name", "description", "startMoment", "endMoment", "monthsActive", "effort", "moreInfo");
+		super.unbindGlobal("campaignId", this.campaign.getId());
 	}
 }

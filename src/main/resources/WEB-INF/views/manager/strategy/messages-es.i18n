@@ -16,4 +16,4 @@ manager.strategy.form.label.monthsActive = Meses activos
 manager.strategy.form.label.expectedPercentage = Porcentaje esperado
 
 manager.strategy.form.label.tactics = Tacticas
-manager.strategy.form.label.fundraiser = Recaudador
+manager.strategy.button.fundraiser = Recaudador

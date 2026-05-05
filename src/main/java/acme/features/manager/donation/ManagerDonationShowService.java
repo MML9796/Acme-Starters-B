@@ -26,7 +26,6 @@ public class ManagerDonationShowService extends AbstractService<Manager, Donatio
 	public void authorise() {
 		int managerId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		// Validamos toda la cadena desde Donation -> Sponsorship -> Project -> Manager
 		boolean status = this.donation != null && this.donation.getSponsorship() != null && this.donation.getSponsorship().getProject() != null && this.donation.getSponsorship().getProject().getManager().getId() == managerId
 			&& !this.donation.getSponsorship().getProject().getDraftMode();
 

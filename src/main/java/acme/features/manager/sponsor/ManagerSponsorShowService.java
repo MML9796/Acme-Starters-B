@@ -1,0 +1,42 @@
+
+package acme.features.manager.sponsor;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import acme.client.services.AbstractService;
+import acme.realms.Manager;
+import acme.realms.Sponsor;
+
+@Service
+public class ManagerSponsorShowService extends AbstractService<Manager, Sponsor> {
+
+	//Internal state
+	@Autowired
+	private ManagerSponsorRepository	repository;
+	private Sponsor						sponsor;
+
+
+	//AbstractService interface
+	@Override
+	public void load() {
+		int id;
+
+		id = super.getRequest().getData("id", int.class);
+		this.sponsor = this.repository.findSponsorById(id);
+	}
+
+	@Override
+	public void authorise() {
+		boolean status = false;
+		if (this.sponsor != null)
+			status = true;
+		super.setAuthorised(status);
+	}
+
+	@Override
+	public void unbind() {
+		super.unbindObject(this.sponsor, "address", "im", "gold");
+	}
+
+}

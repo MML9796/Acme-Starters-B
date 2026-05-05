@@ -1,0 +1,12 @@
+# messages-es.i18n
+#
+manager.inventor.form.title = Formulario de inventor
+manager.inventor.list.title = Lista de inventores del proyecto
+
+manager.inventor.list.label.bio = Bio
+manager.inventor.list.label.username = Nombre de usuario
+
+manager.inventor.form.label.username = Nombre de usuario
+manager.inventor.form.label.bio = Bio
+manager.inventor.form.label.keyWords = Palabras clave
+manager.inventor.form.label.licensed = Licencia

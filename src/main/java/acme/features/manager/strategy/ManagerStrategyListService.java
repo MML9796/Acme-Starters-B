@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
+import acme.entities.projects.Project;
 import acme.entities.strategy.Strategy;
+import acme.features.manager.project.ManagerProjectRepository;
 import acme.realms.Manager;
 
 @Service
@@ -17,17 +19,25 @@ public class ManagerStrategyListService extends AbstractService<Manager, Strateg
 	private ManagerStrategyRepository	repository;
 	private Collection<Strategy>		strategies;
 
+	@Autowired
+	private ManagerProjectRepository	projectRepository;
+
 
 	@Override
 	public void load() {
-		// Cargamos todas las estrategias para el Manager
-		this.strategies = this.repository.findAllStrategies();
+		int projectId = super.getRequest().getData("projectId", int.class);
+		this.strategies = this.repository.findStrategyByProjectId(projectId);
 	}
 
 	@Override
 	public void authorise() {
-		// Acceso libre para el Manager a la lista general
-		super.setAuthorised(true);
+		int projectId = super.getRequest().getData("projectId", int.class);
+		Project p = this.projectRepository.findProjectById(projectId);
+
+		int managerID = super.getRequest().getPrincipal().getAccountId();
+		boolean status = p != null && p.getManager().getUserAccount().getId() == managerID;
+
+		super.setAuthorised(status);
 	}
 
 	@Override

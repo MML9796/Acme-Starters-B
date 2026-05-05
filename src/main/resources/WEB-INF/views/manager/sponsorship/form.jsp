@@ -12,4 +12,5 @@
 	<acme:form-double code="manager.sponsorship.form.label.monthsActive" path="monthsActive"/>
 	<acme:form-double code="manager.sponsorship.form.label.totalMoney" path="totalMoney"/>
 	<acme:button code="manager.sponsorship.button.donation" action="/manager/donation/list?sponsorshipId=${id}"/>
+    <acme:button code="manager.sponsorship.button.sponsor" action="/manager/sponsor/show?sponsorshipId=${id}"/>
 </acme:form>
