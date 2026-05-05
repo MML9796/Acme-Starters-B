@@ -13,3 +13,7 @@
 	<acme:list-hidden path="monthsActive"/>
 	<acme:list-hidden path="hours"/>
 </acme:list>
+
+<jstl:if test="${isAuditor}">
+     <acme:button code="any.project.button.auditor.create" action="/auditor/audit-report-assignment/create?projectId=${projectId}"/>
+    </jstl:if>

@@ -11,6 +11,10 @@
 	<acme:form-moment code="any.campaign.form.label.monthsActive" path="monthsActive"/>
 	<acme:form-double code="any.campaign.form.label.effort" path="effort"/>
 	<acme:form-textbox code="any.campaign.form.label.moreInfo" path="moreInfo"/>
+	<jstl:if test="${title != null}">
+	<acme:form-textbox code="any.campaign.form.label.project" path="title"/>
+	</jstl:if>
 	<acme:button code="any.campaign.button.milestone" action="/any/milestone/list?campaignId=${id}"/>
 	<acme:button code="any.campaign.button.spokesperson" action="/any/spokesperson/show?id=${spokespersonId}"/>
+	
 </acme:form>

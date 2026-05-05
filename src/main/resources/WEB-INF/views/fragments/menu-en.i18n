@@ -60,11 +60,13 @@ master.menu.fundraiser.strategy.list = My strategies
 
 master.menu.sponsor = Sponsor
 master.menu.sponsor.sponsorship.list = My sponsorships
+master.menu.sponsor.project.list = Sponsored projects
 
 # master.menu.auditor #########################################################
 
 master.menu.auditor = Auditor
 master.menu.auditor.audit-report.list = My audit reports
+master.menu.auditor.project.list = Audited projects
 
 # master.menu.user-account ####################################################
 

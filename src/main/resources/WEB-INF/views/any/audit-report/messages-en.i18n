@@ -9,6 +9,7 @@ any.audit-report.form.label.endMoment = End:
 any.audit-report.form.label.moreInfo = More info: (Optional)
 any.audit-report.form.label.monthsActive = Months Active:
 any.audit-report.form.label.hours = Hours:
+any.audit-report.form.label.project = Project
 any.audit-report.form.label.auditor = Auditor
 any.audit-report.form.label.audit-sections = Report sections
 
@@ -16,3 +17,5 @@ any.audit-report.list.label.ticker = Ticker
 any.audit-report.list.label.name = Name
 any.audit-report.list.label.startMoment = Start
 any.audit-report.list.label.endMoment = End
+any.project.button.auditor.create = Add Audit Report
+auditor.audit-report.button.unassign = Unassign Project
