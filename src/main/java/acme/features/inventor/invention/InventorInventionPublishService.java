@@ -50,7 +50,7 @@ public class InventorInventionPublishService extends AbstractService<Inventor, I
 		Integer numParts;
 		Date publishMoment;
 
-		numParts = this.repository.getNumPartsByInventionId(this.invention.getId());
+		numParts = this.repository.findPartsSizeById(this.invention.getId());
 		publishMoment = MomentHelper.getCurrentMoment();
 
 		super.state(numParts > 0, "*", "acme.validation.invention.existing-part.message");
