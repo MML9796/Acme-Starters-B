@@ -1,0 +1,26 @@
+sponsor.project.list.title = Project list
+sponsor.project.form.title = Project details
+
+sponsor.project.list.label.title = Title
+sponsor.project.list.label.keyWords = Key Words
+sponsor.project.list.label.kickOffMoment = KickOff Moment
+sponsor.project.list.label.closeOutMoment = CloseOut Moment
+
+sponsor.project.form.label.title = Title
+sponsor.project.form.label.keyWords = Key Words
+sponsor.project.form.label.kickOffMoment = KickOff Moment
+sponsor.project.form.label.closeOutMoment = CloseOut Moment
+sponsor.project.form.label.description = Description
+sponsor.project.form.label.effort = Effort
+sponsor.project.button.manager = Manager
+sponsor.project.button.inventor= Inventors
+sponsor.project.button.spokesperson= Spokespeople
+sponsor.project.button.fundraiser= Fundraisers
+sponsor.project.button.invention= Inventions
+sponsor.project.button.strategy= Strategies
+sponsor.project.button.campaign= Campaigns
+sponsor.project.button.sponsorship = Sponsorships
+sponsor.project.button.audit-report = Audit Reports
+
+sponsor.project.label.roles= Associated Roles
+sponsor.project.label.elements = Project Elements

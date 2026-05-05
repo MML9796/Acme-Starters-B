@@ -59,12 +59,14 @@ master.menu.fundraiser.strategy.list = Mis estrategias
 # master.menu.sponsor #########################################################
 
 master.menu.sponsor = Patrocinador
-master.menu.sponsor.sponsorship.list = Mis Patrocinios
+master.menu.sponsor.sponsorship.list = Mis patrocinios
+master.menu.sponsor.project.list = Proyectos patrocinados
 
 # master.menu.auditor #########################################################
 
 master.menu.auditor = Auditor
 master.menu.auditor.audit-report.list = Mis informes de auditoría
+master.menu.auditor.project.list = Proyectos auditados
 
 # master.menu.user-account ####################################################
 

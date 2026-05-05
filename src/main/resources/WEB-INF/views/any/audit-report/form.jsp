@@ -19,7 +19,7 @@
 	<acme:button code="any.audit-report.form.label.auditor" action="/any/auditor/show?id=${auditor.id}"/>
 	<acme:button code="any.audit-report.form.label.audit-sections" action="/any/audit-section/list?auditReportId=${id}"/>
 	
-	<jstl:if test="${projectId != null}">
+	<jstl:if test="${projectId != null && projectUnasssignMoment}">
 		<acme:submit code="auditor.audit-report.button.unassign" action="/auditor/audit-report/unassign?auditReportId=${id}"/>
 	</jstl:if>
 </acme:form>

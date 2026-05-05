@@ -1,12 +1,15 @@
 
 package acme.features.auditor.audit_report_assignment;
 
+import java.time.temporal.ChronoUnit;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.components.views.SelectChoices;
+import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.audit_reports.AuditReport;
 import acme.entities.projects.Project;
@@ -61,6 +64,8 @@ public class AuditReportAssignmentCreateService extends AbstractService<Auditor,
 	public void execute() {
 		AuditReport auditreport = this.repository.findAuditReportById(this.auditReportAssigment.getAuditReportId());
 		if (auditreport != null) {
+			Date projectUnassignMoment = MomentHelper.deltaFromCurrentMoment(24, ChronoUnit.HOURS);
+			auditreport.setProjectUnassignMoment(projectUnassignMoment);
 			auditreport.setProject(this.project);
 			this.repository.save(auditreport);
 		}

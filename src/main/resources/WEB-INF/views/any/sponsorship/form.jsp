@@ -18,7 +18,7 @@
 	<acme:button code="any.sponsorship.button.donation" action="/any/donation/list?sponsorshipId=${id}"/>
 	<acme:button code="any.sponsorship.button.sponsor" action="/any/sponsor/show?id=${sponsorId}"/>
 	
-	<jstl:if test="${projectId != null}">
+	<jstl:if test="${projectId != null && projectUnasssignMoment}">
 		<acme:submit code="sponsor.sponsorship.button.unassign" action="/sponsor/sponsorship/unassign?sponsorshipId=${id}"/>
 	</jstl:if>
 </acme:form>

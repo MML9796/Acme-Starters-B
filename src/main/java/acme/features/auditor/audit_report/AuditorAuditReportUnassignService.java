@@ -4,6 +4,7 @@ package acme.features.auditor.audit_report;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.audit_reports.AuditReport;
 import acme.realms.Auditor;
@@ -33,7 +34,8 @@ public class AuditorAuditReportUnassignService extends AbstractService<Auditor, 
 		auditorId = super.getRequest().getPrincipal().getActiveRealm().getId();
 		auditReportId = super.getRequest().getData("id", int.class);
 		aud = this.repository.findAuditReportById(auditReportId);
-		status = aud != null && aud.getAuditor().getId() == auditorId;
+		status = aud != null && aud.getAuditor().getId() == auditorId && MomentHelper.getCurrentMoment().before(aud.getProjectUnassignMoment());
+		;
 
 		super.setAuthorised(status);
 	}
@@ -51,6 +53,7 @@ public class AuditorAuditReportUnassignService extends AbstractService<Auditor, 
 	@Override
 	public void execute() {
 		this.auditReport.setProject(null);
+		this.auditReport.setProjectUnassignMoment(null);
 		this.repository.save(this.auditReport);
 	}
 
