@@ -10,3 +10,7 @@
 	<acme:list-hidden path="description"/>
 	<acme:list-hidden path="moreInfo"/>
 </acme:list>
+
+<jstl:if test="${isSponsor}">
+     <acme:button code="any.project.button.sponsor.create" action="/sponsor/sponsorship-assignment/create?projectId=${projectId}"/>
+    </jstl:if>

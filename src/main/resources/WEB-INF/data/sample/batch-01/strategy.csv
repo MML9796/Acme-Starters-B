@@ -46,7 +46,7 @@ strategy-44,ST41-AAAAA,Base Name,Base Description,2027/01/01 10:00,2027/12/31 10
 strategy-45,ST42-AAAAA,Base Name,Base Description,2027/01/01 10:00,2027/12/31 10:00,http://example.org/a/b,true,fundraiser-02,
 strategy-46,ST43-AAAAA,Base Name,Base Description,2027/01/01 10:00,2027/12/31 10:00,http://example.org/a/b?,true,fundraiser-01,
 strategy-47,ST44-AAAAA,Base Name,Base Description,2027/01/01 10:00,2027/12/31 10:00,http://example.org/a/b?a&b,true,fundraiser-02,
-strategy-48,ST45-AAAAA,Base Name,Base Description,2027/01/01 10:00,2027/12/31 10:00,http://base.com,false,fundraiser-01,
+strategy-48,ST45-AAAAA,Base Name,Base Description,2027/01/01 10:00,2027/12/31 10:00,http://base.com,false,fundraiser-01,project-46
 strategy-49,ST46-AAAAA,Base Name,Base Description,2027/01/01 10:00,2027/12/31 10:00,http://base.com,false,fundraiser-02,
 strategy-50,ST47-AAAAAAAAA,Base Name,Base Description,2027/01/01 10:00,2027/12/31 10:00,http://base.com,false,fundraiser-02,
 strategy-51,ST48-AAAAA,B,Base Description,2027/01/01 10:00,2027/12/31 10:00,http://base.com,false,fundraiser-02,

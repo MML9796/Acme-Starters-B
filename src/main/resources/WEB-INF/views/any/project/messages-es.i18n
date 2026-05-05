@@ -1,0 +1,26 @@
+any.project.list.title = Lista de Proyectos
+any.project.form.title = Detalles del Proyecto
+
+any.project.list.label.title = Titulo
+any.project.list.label.keyWords = Palabras Clave
+any.project.list.label.kickOffMoment = Fecha Reunion de Arranque
+any.project.list.label.closeOutMoment =Fecha Reunion de Cierre
+
+any.project.form.label.title = Titulo
+any.project.form.label.keyWords = Palabras Clave
+any.project.form.label.kickOffMoment = Fecha Reunion de Arranque
+any.project.form.label.closeOutMoment = Fecha Reunion de Cierre
+any.project.form.label.description = Descripcion
+any.project.form.label.effort = Esfuerzo
+any.project.button.manager = Manager
+any.project.button.inventor= Inventores
+any.project.button.spokesperson= Portavoces
+any.project.button.fundraiser= Recaudadores
+any.project.button.invention= Invenciones
+any.project.button.strategy= Estrategias
+any.project.button.campaign= Campañas
+any.project.button.sponsorship = Patrocinios
+any.project.button.audit-report = Informes de auditoria
+
+any.project.label.roles= Roles Asociados
+any.project.label.elements = Elementos del Proyecto

@@ -18,4 +18,7 @@ public interface AnySponsorshipRepository extends AbstractRepository {
 	@Query("select s from Sponsorship s where s.draftMode = false")
 	Collection<Sponsorship> findAllSponsorship();
 
+	@Query("select s from Sponsorship s where s.project.id = :projectId")
+	Collection<Sponsorship> findAllSponsorshipByProjectId(Integer projectId);
+
 }

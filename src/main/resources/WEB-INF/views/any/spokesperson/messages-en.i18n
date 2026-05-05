@@ -1,6 +1,15 @@
 any.spokesperson.form.title = Spokesperson details
+any.spokesperson.list.title = Spokespeople list
+
+any.spokesperson.list.label.username = Username
+any.spokesperson.list.label.cv = CV
 
 any.spokesperson.form.label.userAccount.username = Username
 any.spokesperson.form.label.cv = CV
 any.spokesperson.form.label.achievements = Achievements
 any.spokesperson.form.label.licensed = Licensed
+
+any.spokesperson.list.label.username = Username
+any.spokesperson.list.label.cv = CV
+any.spokesperson.list.label.achievements = Achievements
+any.spokesperson.list.label.licensed = Licensed

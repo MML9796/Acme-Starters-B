@@ -39,5 +39,7 @@ public class AnyInventionShowService extends AbstractService<Any, Invention> {
 		super.unbindObject(this.invention, "ticker", "name", "description", "startMoment", "endMoment", "monthsActive", "cost", "moreInfo");
 		super.unbindGlobal("id", this.invention.getId());
 		super.unbindGlobal("inventorId", this.invention.getInventor().getId());
+		if (this.invention.getProject() != null)
+			super.unbindGlobal("title", this.invention.getProject().getTitle());
 	}
 }

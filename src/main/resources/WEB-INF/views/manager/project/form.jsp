@@ -51,13 +51,16 @@
 	
 	<div>
 		<h4><spring:message code="manager.projects.label.elements"/></h4>
+		
+		<button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/invention/list?projectId=${id}';">
+	        <spring:message code="manager.projects.button.invention"/>
+	    </button>
+	    
+	    
         <button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/campaign/list?projectId=${id}';">
 	        <spring:message code="manager.projects.button.campaign"/>
 	    </button>
-	    
-	    <button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/invention/list?projectId=${id}';">
-	        <spring:message code="manager.projects.button.invention"/>
-	    </button>
+
 	    
 	    <button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/strategy/list?projectId=${id}';">
 	        <spring:message code="manager.projects.button.strategy"/>

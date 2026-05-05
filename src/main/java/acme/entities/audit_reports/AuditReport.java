@@ -78,6 +78,11 @@ public class AuditReport extends AbstractEntity {
 	@Column
 	private Boolean					draftMode;
 
+	@Optional
+	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@Column
+	private Date					projectUnassignMoment;
+
 	// Derived attributes -----------------------------------------------------
 
 	@Transient

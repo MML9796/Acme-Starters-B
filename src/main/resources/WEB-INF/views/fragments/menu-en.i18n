@@ -15,7 +15,8 @@ master.menu.invention.list = Invention list
 master.menu.campaign.list = Campaign list
 master.menu.any.strategy.list = Strategy list
 master.menu.sponsorship.list = Sponsorship list
-master.menu.any.audit-report.list = Published audit reports
+master.menu.any.audit-report.list = Audit Reports list
+master.menu.any.project.list = Projects list
 
 # master.menu.anonymous #######################################################
 
@@ -59,11 +60,13 @@ master.menu.fundraiser.strategy.list = My strategies
 
 master.menu.sponsor = Sponsor
 master.menu.sponsor.sponsorship.list = My sponsorships
+master.menu.sponsor.project.list = Sponsored projects
 
 # master.menu.auditor #########################################################
 
 master.menu.auditor = Auditor
 master.menu.auditor.audit-report.list = My audit reports
+master.menu.auditor.project.list = Audited projects
 
 # master.menu.user-account ####################################################
 
@@ -113,3 +116,8 @@ master.menu.sponsor.sponsorship.list = My sponsorships
 #master.menu.manager ##############################################
 master.menu.manager = Manager
 master.menu.manager.project.list= My projects
+
+#master.menu.member ##############################################
+master.menu.member = Member
+master.menu.member.project.list = My Projects
+

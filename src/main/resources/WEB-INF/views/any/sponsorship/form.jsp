@@ -11,6 +11,16 @@
 	<acme:form-url code="any.sponsorship.form.label.moreInfo" path="moreInfo"/>
 	<acme:form-double code="any.sponsorship.form.label.monthsActive" path="monthsActive"/>
 	<acme:form-double code="any.sponsorship.form.label.totalMoney" path="totalMoney"/>
+	<jstl:if test="${title != null}">
+	<acme:form-textbox code="any.sponsorship.form.label.project" path="title"/>
+	</jstl:if>
+	
 	<acme:button code="any.sponsorship.button.donation" action="/any/donation/list?sponsorshipId=${id}"/>
 	<acme:button code="any.sponsorship.button.sponsor" action="/any/sponsor/show?id=${sponsorId}"/>
+	
+	<jstl:if test="${projectId != null && projectUnasssignMoment}">
+		<acme:submit code="sponsor.sponsorship.button.unassign" action="/sponsor/sponsorship/unassign?sponsorshipId=${id}"/>
+	</jstl:if>
 </acme:form>
+
+	

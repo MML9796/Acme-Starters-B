@@ -18,4 +18,7 @@ public interface AnyAuditReportRepository extends AbstractRepository {
 	@Query("select ar from AuditReport ar where ar.id = :id")
 	AuditReport findAuditReportById(int id);
 
+	@Query("select a from AuditReport a where a.project.id = :projectId")
+	Collection<AuditReport> findAllAuditReportsByProjectId(Integer projectId);
+
 }
