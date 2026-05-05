@@ -10,6 +10,8 @@
     
 </acme:list>
 
+<jstl:if test="${draftMode == true}">
 <acme:button code="manager.memberProject.button.assignNew" action="/manager/member-project/create?projectId=${projectId}&role=FUNDRAISER"/>
 
 <acme:button code="manager.memberProject.button.unAssignNew" action="/manager/member-project/delete?projectId=${projectId}&role=FUNDRAISER"/>
+</jstl:if>

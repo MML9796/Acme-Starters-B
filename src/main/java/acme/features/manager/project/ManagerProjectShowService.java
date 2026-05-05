@@ -39,5 +39,6 @@ public class ManagerProjectShowService extends AbstractService<Manager, Project>
 	public void unbind() {
 		super.unbindObject(this.project, "title", "keyWords", "description", "kickOffMoment", "closeOutMoment", "effort", "draftMode");
 		super.unbindGlobal("id", this.project.getId());
+		super.unbindGlobal("draftMode", this.project.getDraftMode());
 	}
 }

@@ -34,47 +34,48 @@
 	
 	<div>
 		<h4><spring:message code="manager.projects.label.roles"/></h4>
-        <button type="button" class="btn btn-info" onclick="javascript: window.location.replace('manager/inventor/list?projectId=${id}');">
+        <button type="button" class="btn btn-info" onclick="javascript: window.location.href='manager/inventor/list?projectId=${id}';">
 	        <spring:message code="manager.projects.button.inventor"/>
 	    </button>
 	    
-	    <button type="button" class="btn btn-info" onclick="javascript: window.location.replace('manager/spokesperson/list?projectId=${id}');">
+	    <button type="button" class="btn btn-info" onclick="javascript: window.location.href='manager/spokesperson/list?projectId=${id}';">
 	        <spring:message code="manager.projects.button.spokesperson"/>
 	    </button>
 	    
-	    <button type="button" class="btn btn-info" onclick="javascript: window.location.replace('manager/fundraiser/list?projectId=${id}');">
+	    <button type="button" class="btn btn-info" onclick="javascript: window.location.href='manager/fundraiser/list?projectId=${id}';">
 	        <spring:message code="manager.projects.button.fundraiser"/>
 	    </button>
+	    
 	</div>
-	
 	<br/>
 	
 	<div>
 		<h4><spring:message code="manager.projects.label.elements"/></h4>
-        <button type="button" class="btn btn-success" onclick="javascript: window.location.replace('manager/campaign/list?projectId=${id}');">
+        <button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/campaign/list?projectId=${id}';">
 	        <spring:message code="manager.projects.button.campaign"/>
 	    </button>
 	    
-	    <button type="button" class="btn btn-success" onclick="javascript: window.location.replace('manager/invention/list?projectId=${id}');">
+	    <button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/invention/list?projectId=${id}';">
 	        <spring:message code="manager.projects.button.invention"/>
 	    </button>
 	    
-	    <button type="button" class="btn btn-success" onclick="javascript: window.location.replace('manager/strategy/list?projectId=${id}');">
+	    <button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/strategy/list?projectId=${id}';">
 	        <spring:message code="manager.projects.button.strategy"/>
 	    </button>
-	</div>
-	
-	<jstl:if test="${draftMode == false}">
+	    <jstl:if test="${draftMode == false}">
 		<br/>
 		<div>
-            <button type="button" class="btn btn-warning" onclick="javascript: window.location.replace('manager/sponsorship/list?projectId=${id}');">
+            <button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/sponsorship/list?projectId=${id}';">
 		        <spring:message code="manager.projects.button.sponsorship"/>
 		    </button>
 		    
-		    <button type="button" class="btn btn-warning" onclick="javascript: window.location.replace('manager/auditReport/list?projectId=${id}');">
+		    <button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/audit-report/list?projectId=${id}';">
 		        <spring:message code="manager.projects.button.auditReport"/>
 		    </button>
 		</div>
 	</jstl:if>
+	</div>
+	
+	
    
 </acme:form>

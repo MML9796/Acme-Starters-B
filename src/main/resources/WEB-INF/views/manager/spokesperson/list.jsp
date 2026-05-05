@@ -10,7 +10,8 @@
 	<acme:list-hidden path="licensed"/>
 </acme:list>
 
-
+<jstl:if test="${draftMode == true}">
 <acme:button code="manager.memberProject.button.assignNew" action="/manager/member-project/create?projectId=${projectId}&role=SPOKESPERSON"/>
 
 <acme:button code="manager.memberProject.button.unAssignNew" action="/manager/member-project/delete?projectId=${projectId}&role=SPOKESPERSON"/>
+</jstl:if>
