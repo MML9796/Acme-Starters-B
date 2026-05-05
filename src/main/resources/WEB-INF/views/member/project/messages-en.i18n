@@ -17,10 +17,13 @@ member.project.button.inventions = Inventions
 member.project.button.campaigns = Campaigns
 member.project.button.strategies = Strategies
 member.project.button.inventors = Inventors
-member.project.button.spokesperson = Spokespersons
+member.project.button.spokesperson = Spokespeople
 member.project.button.fundraiser = Fundraisers
 
 member.project.button.manager = Manager
+
+member.project.label.roles= Associated Roles
+member.project.label.elements= Project Elements
 
 
 

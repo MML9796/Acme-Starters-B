@@ -47,16 +47,17 @@
 			onclick="javascript: window.location.href='any/invention/list?projectId=${id}';">
 			<spring:message code="any.project.button.invention"/>
 		</button>
+		
+		<button type="button" class="btn btn-success"
+			onclick="javascript: window.location.href='any/campaign/list?projectId=${id}';">
+			<spring:message code="any.project.button.campaign"/>
+		</button>
 
 		<button type="button" class="btn btn-success"
 			onclick="javascript: window.location.href='any/strategy/list?projectId=${id}';">
 			<spring:message code="any.project.button.strategy"/>
 		</button>
 
-		<button type="button" class="btn btn-success"
-			onclick="javascript: window.location.href='any/campaign/list?projectId=${id}';">
-			<spring:message code="any.project.button.campaign"/>
-		</button>
 
 		<button type="button" class="btn btn-success"
 			onclick="javascript: window.location.href='any/sponsorship/list?projectId=${id}';">

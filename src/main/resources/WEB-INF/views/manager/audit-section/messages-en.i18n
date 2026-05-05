@@ -1,0 +1,11 @@
+manager.audit-section.form.title = Audit section form
+manager.audit-section.list.title = Listing of audit sections
+
+manager.audit-section.form.label.name = Name:
+manager.audit-section.form.label.notes = Notes:
+manager.audit-section.form.label.hours = Hours:
+manager.audit-section.form.label.kind = Section kind:
+
+manager.audit-section.list.label.name = Name
+manager.audit-section.list.label.hours = Hours
+manager.audit-section.list.label.kind = Section kind

@@ -1,0 +1,10 @@
+manager.part.list.title = Lista de partes
+manager.part.form.title = Detalles de la parte
+
+manager.part.list.label.name = Nombre
+manager.part.list.label.cost = Coste
+
+manager.part.form.label.name = Nombre
+manager.part.form.label.description = Descripcion
+manager.part.form.label.cost = Coste
+manager.part.form.label.kind = Tipo

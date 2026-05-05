@@ -1,0 +1,19 @@
+manager.strategy.list.title = Strategy list
+manager.strategy.form.title = Strategy details
+
+manager.strategy.list.label.ticker = Ticker
+manager.strategy.list.label.name = Name
+manager.strategy.list.label.startMoment = Start moment
+manager.strategy.list.label.endMoment = End moment
+
+manager.strategy.form.label.ticker = Ticker
+manager.strategy.form.label.name = Name
+manager.strategy.form.label.startMoment = Start moment
+manager.strategy.form.label.endMoment = End moment
+manager.strategy.form.label.description = Description
+manager.strategy.form.label.moreInfo = More info
+manager.strategy.form.label.monthsActive = Months active
+manager.strategy.form.label.expectedPercentage = Expected percentage
+
+manager.strategy.form.label.tactics = Tactics
+manager.strategy.button.fundraiser = Fundraiser 

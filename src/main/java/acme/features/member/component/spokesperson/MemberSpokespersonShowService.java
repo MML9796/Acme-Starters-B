@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.client.services.AbstractService;
-import acme.features.member.project.MemberProjectRepository;
 import acme.realms.Member;
 import acme.realms.Spokesperson;
 
@@ -15,8 +14,6 @@ public class MemberSpokespersonShowService extends AbstractService<Member, Spoke
 	@Autowired
 	private MemberSpokespersonRepository	repository;
 
-	@Autowired
-	private MemberProjectRepository			projectRepository;
 	private Spokesperson					spokesperson;
 
 
