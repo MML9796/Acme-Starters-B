@@ -47,7 +47,7 @@ project-41,example,example,'; DROP TABLE user_account;--,2025/09/01 10:00,2025/0
 project-42,example,example,'; SHUTDOWN;--,2025/09/01 10:00,2025/09/01 12:00,true,manager-01
 project-43,example,example,'; EXEC xp_cmdshell('ping attacker.com');--,2025/09/01 10:00,2025/09/01 12:00,true,manager-01
 # moments,"","","","","","",""
-project-44,example,example,example,2025/01/01 00:01,2026/01/01 00:01,true,manager-01
-project-45,example,example,example,2200/12/31 23:58,2200/12/31 23:59,true,manager-01
+project-44,exampleNoPublicado,manager2,example,2025/01/01 00:01,2026/01/01 00:01,true,manager-02
+project-45,examplePublicado,manager2,example,2200/12/31 23:58,2200/12/31 23:59,false,manager-02
 # draft-mode,"","","","","","",""
 project-46,examplePublicado,example,example,2025/09/01 10:00,2025/09/01 12:00,false,manager-01

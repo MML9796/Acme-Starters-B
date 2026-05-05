@@ -25,12 +25,7 @@
             	<acme:submit code="manager.projects.button.update" action="/manager/project/update"/>
             	<acme:submit code="manager.projects.button.delete" action="/manager/project/delete"/>
         	</jstl:if>
-        	
-    	</jstl:when>
-	</jstl:choose>
-	
-	<br/>
-	<hr/>
+        	<br/>
 	
 	<div>
 		<h4><spring:message code="manager.projects.label.roles"/></h4>
@@ -75,6 +70,9 @@
 		    </button>
 	</jstl:if>
 	</div>
+    	</jstl:when>
+	</jstl:choose>
+	
 	
 	
    

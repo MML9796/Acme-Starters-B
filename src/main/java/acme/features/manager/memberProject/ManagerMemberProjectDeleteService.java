@@ -43,13 +43,18 @@ public class ManagerMemberProjectDeleteService extends AbstractService<Manager, 
 
 	@Override
 	public void authorise() {
-		boolean status;
+		boolean status, s, r;
 		int pId = super.getRequest().getData("projectId", int.class);
 		Project p = this.projectRepo.findProjectById(pId);
 		int managerId = super.getRequest().getPrincipal().getAccountId();
+		String role = super.getRequest().getData("role", String.class);
 
-		status = p != null && p.getManager().getUserAccount().getId() == managerId && p.getDraftMode();
-
+		s = p != null && p.getManager().getUserAccount().getId() == managerId && p.getDraftMode();
+		if ("INVENTOR".equals(role) || "SPOKESPERSON".equals(role) || "FUNDRAISER".equals(role))
+			r = true;
+		else
+			r = false;
+		status = s && r;
 		super.setAuthorised(status);
 	}
 
