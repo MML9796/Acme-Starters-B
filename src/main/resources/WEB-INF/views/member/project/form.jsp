@@ -17,6 +17,11 @@
     <acme:button code="member.project.button.spokesperson" action="/member/spokesperson/list?projectId=${id}"/>
     <acme:button code="member.project.button.fundraiser" action="/member/fundraiser/list?projectId=${id}"/>
     <acme:button code="any.project.button.manager" action="/any/manager/show?id=${managerId}"/>
+    
+    <jstl:if test="${!draftMode}">
+		<acme:button code="any.project.button.sponsorship" action="/any/sponsorship/list?projectId=${id}"/>
+		<acme:button code="any.project.button.audit-report" action="/any/audit-report/list?projectId=${id}"/>
+	</jstl:if>
 
  
 </acme:form>

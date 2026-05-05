@@ -13,6 +13,6 @@
 	<acme:list-hidden path="moreInfo"/>
 </acme:list>
 
-<jstl:if test="${isFundraiser}">
+<jstl:if test="${isFundraiser && draftMode}">
      <acme:button code="member.project.button.fundraiser.create" action="/fundraiser/strategy-assignment/create?projectId=${projectId}"/>
 </jstl:if>

@@ -50,6 +50,7 @@ public class MemberStrategyListService extends AbstractService<Member, Strategy>
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.strategy, "ticker", "name", "startMoment", "endMoment");
+		super.unbindGlobal("draftMode", this.project.getDraftMode());
 		boolean isFundraiser = super.getRequest().getPrincipal().getRealms().stream().anyMatch(Fundraiser.class::isInstance);
 		if (super.getRequest().hasData("projectId")) {
 			super.unbindGlobal("isFundraiser", isFundraiser);

@@ -12,6 +12,6 @@
 	<acme:list-hidden path="moreInfo"/>
 </acme:list>
 
-<jstl:if test="${isSpokesperson}">
+<jstl:if test="${isSpokesperson && draftMode}">
      <acme:button code="member.project.button.spokesperson.create" action="/spokesperson/campaign-assignment/create?projectId=${projectId}"/>
 </jstl:if>

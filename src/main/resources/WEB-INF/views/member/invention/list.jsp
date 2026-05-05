@@ -11,6 +11,6 @@
 	<acme:list-hidden path="moreInfo"/>
 </acme:list>
 
-<jstl:if test="${isInventor}">
+<jstl:if test="${isInventor && draftMode}">
      <acme:button code="member.project.button.inventor.create" action="/inventor/invention-assignment/create?projectId=${projectId}"/>
 </jstl:if>

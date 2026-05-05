@@ -50,6 +50,7 @@ public class MemberCampaignListService extends AbstractService<Member, Campaign>
 	@Override
 	public void unbind() {
 		super.unbindObjects(this.campaign, "ticker", "name", "startMoment", "endMoment", "monthsActive", "effort", "moreInfo");
+		super.unbindGlobal("draftMode", this.project.getDraftMode());
 		boolean isSpokesperson = super.getRequest().getPrincipal().getRealms().stream().anyMatch(Spokesperson.class::isInstance);
 		if (super.getRequest().hasData("projectId")) {
 			super.unbindGlobal("isSpokesperson", isSpokesperson);
