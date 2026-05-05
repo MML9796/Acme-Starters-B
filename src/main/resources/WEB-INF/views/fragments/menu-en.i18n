@@ -15,7 +15,8 @@ master.menu.invention.list = Invention list
 master.menu.campaign.list = Campaign list
 master.menu.any.strategy.list = Strategy list
 master.menu.sponsorship.list = Sponsorship list
-master.menu.any.audit-report.list = Published audit reports
+master.menu.any.audit-report.list = Audit Reports list
+master.menu.any.project.list = Projects list
 
 # master.menu.anonymous #######################################################
 

@@ -16,3 +16,4 @@ any.sponsorship.form.label.monthsActive = Months Active
 any.sponsorship.form.label.totalMoney = Total Money
 any.sponsorship.button.donation = Donation
 any.sponsorship.button.sponsor= Sponsor
+sponsor.sponsorship.button.unassign = Unassign Project

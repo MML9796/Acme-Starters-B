@@ -1,4 +1,8 @@
 any.fundraiser.form.title = Fundraiser details
+any.fundraiser.list.title = Fundraisers list
+
+any.fundraiser.list.label.username = Username
+any.fundraiser.list.label.bank = Bank
 
 any.fundraiser.form.label.username = Username
 any.fundraiser.form.label.bank = Bank

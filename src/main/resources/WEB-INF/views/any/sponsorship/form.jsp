@@ -13,4 +13,10 @@
 	<acme:form-double code="any.sponsorship.form.label.totalMoney" path="totalMoney"/>
 	<acme:button code="any.sponsorship.button.donation" action="/any/donation/list?sponsorshipId=${id}"/>
 	<acme:button code="any.sponsorship.button.sponsor" action="/any/sponsor/show?id=${sponsorId}"/>
+	
+	<jstl:if test="${projectId != null}">
+		<acme:submit code="sponsor.sponsorship.button.unassign" action="/sponsor/sponsorship/unassign?sponsorshipId=${id}"/>
+	</jstl:if>
 </acme:form>
+
+	

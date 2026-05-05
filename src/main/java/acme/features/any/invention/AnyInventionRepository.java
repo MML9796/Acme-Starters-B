@@ -17,4 +17,7 @@ public interface AnyInventionRepository extends AbstractRepository {
 
 	@Query("select i from Invention i where i.draftMode = false")
 	Collection<Invention> findAllInventionPublished();
+
+	@Query("select i from Invention i where i.project.id = :projectId")
+	Collection<Invention> findAllInventionByProjectId(Integer projectId);
 }

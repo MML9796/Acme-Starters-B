@@ -1,4 +1,8 @@
 any.spokesperson.form.title = Detalles del Portavoz
+any.spokesperson.list.title = Lista de Portavoces
+
+any.spokesperson.list.label.username = Nombre de Usuario
+any.spokesperson.list.label.cv = CV
 
 any.spokesperson.form.label.userAccount.username = Nombre
 any.spokesperson.form.label.cv = CV

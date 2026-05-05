@@ -17,4 +17,7 @@ public interface AnyCampaignRepository extends AbstractRepository {
 
 	@Query("select c from Campaign c where c.draftMode = false")
 	Collection<Campaign> findAllCampaign();
+
+	@Query("select c from Campaign c where c.project.id = :projectId")
+	Collection<Campaign> findAllCampaignByProjectId(Integer projectId);
 }

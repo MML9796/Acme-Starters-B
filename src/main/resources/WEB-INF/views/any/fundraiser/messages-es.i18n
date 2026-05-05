@@ -1,4 +1,8 @@
 any.fundraiser.form.title = Detalles del recaudador
+any.fundraiser.list.title = Lista de Recaudadores
+
+any.fundraiser.list.label.username = Nombre de usuario
+any.fundraiser.list.label.bank = Banco
 
 any.fundraiser.form.label.username = Nombre de usuario
 any.fundraiser.form.label.bank = Banco

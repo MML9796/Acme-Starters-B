@@ -17,4 +17,7 @@ public interface AnyStrategyRepository extends AbstractRepository {
 
 	@Query("select s from Strategy s where s.id = :id")
 	Strategy findOneStrategyById(int id);
+
+	@Query("select s from Strategy s where s.project.id = :projectId")
+	Collection<Strategy> findAllStrategyByProjectId(Integer projectId);
 }

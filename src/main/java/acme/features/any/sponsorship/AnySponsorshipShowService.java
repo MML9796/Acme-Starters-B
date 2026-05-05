@@ -42,6 +42,8 @@ public class AnySponsorshipShowService extends AbstractService<Any, Sponsorship>
 		super.unbindObject(this.sponsorship, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "totalMoney");
 		super.unbindGlobal("id", this.sponsorship.getId());
 		super.unbindGlobal("sponsorId", this.sponsorship.getSponsor().getId());
+		if (this.sponsorship.getProject() != null && this.sponsorship.getSponsor().getUserAccount().getId() == super.getRequest().getPrincipal().getAccountId())
+			super.unbindGlobal("projectId", this.sponsorship.getProject().getId());
 	}
 
 }

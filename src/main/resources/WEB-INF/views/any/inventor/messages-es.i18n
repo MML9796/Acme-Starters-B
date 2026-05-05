@@ -1,4 +1,8 @@
 any.inventor.form.title = Detalles del Inventor
+any.inventor.list.title = Lista de inventores
+
+any.inventor.list.label.username = Nombre de usuario
+any.inventor.list.label.bio = Bio
 
 any.inventor.form.label.username = Nombre de usuario
 any.inventor.form.label.bio = Bio

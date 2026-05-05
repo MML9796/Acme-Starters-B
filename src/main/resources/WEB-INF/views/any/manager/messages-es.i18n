@@ -1,0 +1,6 @@
+any.manager.form.title = Detalles de Manager
+
+any.manager.form.label.username = Nombre de Usuario
+any.manager.form.label.position = Posicion
+any.manager.form.label.someSkills = Algunas habilidades
+any.manager.form.label.isExecutive = Es ejecutivo
