@@ -1,0 +1,10 @@
+manager.milestone.list.title = Milestone list
+manager.milestone.form.title = Milestone details
+
+manager.milestone.list.label.title = Title
+manager.milestone.list.label.achievements = Achievements
+
+manager.milestone.form.label.title = Title
+manager.milestone.form.label.achievements = Achievements
+manager.milestone.form.label.effort = Effort
+manager.milestone.form.label.kind = Kind

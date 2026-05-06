@@ -1,0 +1,26 @@
+sponsor.project.list.title = Lista de Proyectos
+sponsor.project.form.title = Detalles del Proyecto
+
+sponsor.project.list.label.title = Titulo
+sponsor.project.list.label.keyWords = Palabras Clave
+sponsor.project.list.label.kickOffMoment = Fecha Reunion de Arranque
+sponsor.project.list.label.closeOutMoment =Fecha Reunion de Cierre
+
+sponsor.project.form.label.title = Titulo
+sponsor.project.form.label.keyWords = Palabras Clave
+sponsor.project.form.label.kickOffMoment = Fecha Reunion de Arranque
+sponsor.project.form.label.closeOutMoment = Fecha Reunion de Cierre
+sponsor.project.form.label.description = Descripcion
+sponsor.project.form.label.effort = Esfuerzo
+sponsor.project.button.manager = Manager
+sponsor.project.button.inventor= Inventores
+sponsor.project.button.spokesperson= Portavoces
+sponsor.project.button.fundraiser= Recaudadores
+sponsor.project.button.invention= Invenciones
+sponsor.project.button.strategy= Estrategias
+sponsor.project.button.campaign= Campañas
+sponsor.project.button.sponsorship = Patrocinios
+sponsor.project.button.audit-report = Informes de auditoria
+
+sponsor.project.label.roles= Roles Asociados
+sponsor.project.label.elements = Elementos del Proyecto

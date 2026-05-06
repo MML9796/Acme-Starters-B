@@ -43,5 +43,7 @@ public class AnyCampaignShowService extends AbstractService<Any, Campaign> {
 		super.unbindObject(this.campaign, "ticker", "name", "description", "startMoment", "endMoment", "monthsActive", "effort", "moreInfo");
 		super.unbindGlobal("id", this.campaign.getId());
 		super.unbindGlobal("spokespersonId", this.campaign.getSpokesperson().getId());
+		if (this.campaign.getProject() != null)
+			super.unbindGlobal("title", this.campaign.getProject().getTitle());
 	}
 }

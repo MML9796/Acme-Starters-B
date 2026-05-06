@@ -77,6 +77,11 @@ public class Sponsorship extends AbstractEntity {
 	@Column
 	private Boolean					draftMode;
 
+	@Optional
+	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
+	@Column
+	private Date					projectUnassignMoment;
+
 
 	@Mandatory
 	@Valid

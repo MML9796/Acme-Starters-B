@@ -4,6 +4,7 @@ package acme.features.sponsor.sponsorship;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.client.helpers.MomentHelper;
 import acme.client.services.AbstractService;
 import acme.entities.sponsorship.Sponsorship;
 import acme.realms.Sponsor;
@@ -33,7 +34,7 @@ public class SponsorSponsorshipUnassignService extends AbstractService<Sponsor, 
 		sponsorId = super.getRequest().getPrincipal().getActiveRealm().getId();
 		sponsorshipId = super.getRequest().getData("id", int.class);
 		spsh = this.repository.findSponsorshipById(sponsorshipId);
-		status = spsh != null && spsh.getSponsor().getId() == sponsorId;
+		status = spsh != null && spsh.getSponsor().getId() == sponsorId && MomentHelper.getCurrentMoment().before(spsh.getProjectUnassignMoment());
 
 		super.setAuthorised(status);
 	}
@@ -51,6 +52,7 @@ public class SponsorSponsorshipUnassignService extends AbstractService<Sponsor, 
 	@Override
 	public void execute() {
 		this.sponsorship.setProject(null);
+		this.sponsorship.setProjectUnassignMoment(null);
 		this.repository.save(this.sponsorship);
 	}
 

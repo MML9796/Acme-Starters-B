@@ -1,0 +1,5 @@
+member.strategy.list.title = Strategy list
+member.strategy.form.title = Strategy details
+
+member.project.button.fundraiser.create = Assign strategy
+member.strategy.button.unassign = Unassign strategy

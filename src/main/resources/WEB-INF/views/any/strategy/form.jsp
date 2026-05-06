@@ -11,6 +11,10 @@
     <acme:form-textbox code="any.strategy.form.label.moreInfo" path="moreInfo"/>
     <acme:form-double code="any.strategy.form.label.monthsActive" path="monthsActive"/>
     <acme:form-double code="any.strategy.form.label.expectedPercentage" path="expectedPercentage"/>
+    <jstl:if test="${title != null}">
+	<acme:form-textbox code="any.strategy.form.label.project" path="title"/>
+	</jstl:if>
     <acme:button code="any.strategy.form.label.tactics" action="/any/tactic/list?strategyId=${id}"/>
     <acme:button code="any.strategy.form.label.fundraiser" action="/any/fundraiser/show?id=${fundraiserId}"/>
+    
 </acme:form>

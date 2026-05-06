@@ -1,0 +1,5 @@
+member.invention.list.title = Invention list
+member.invention.form.title = Invention details
+
+member.project.button.inventor.create = Assign invention
+member.invention.button.unassign = Unassign Invention
