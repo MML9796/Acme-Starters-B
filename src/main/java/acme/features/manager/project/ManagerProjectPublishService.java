@@ -23,8 +23,11 @@ public class ManagerProjectPublishService extends AbstractService<Manager, Proje
 
 	@Autowired
 	private ManagerProjectRepository		repository;
+	@Autowired
 	private InventorInventionRepository		inventionRepository;
+	@Autowired
 	private SpokespersonCampaignRepository	campaignRepository;
+	@Autowired
 	private FundraiserStrategyRepository	strategyRepository;
 
 	private Project							project;

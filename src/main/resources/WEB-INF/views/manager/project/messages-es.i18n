@@ -15,6 +15,7 @@ manager.projects.form.label.effort = Esfuerzo
 manager.projects.button.create = Crear
 manager.projects.button.update = Actualizar
 manager.projects.button.delete = Borrar
+manager.projects.button.publish = Publicar
 manager.projects.button.inventor = Inventor
 manager.projects.button.spokesperson = Portavoces
 manager.projects.button.fundraiser = Recaudadores

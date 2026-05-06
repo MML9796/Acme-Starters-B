@@ -19,11 +19,12 @@
         	<acme:submit code="manager.projects.button.create" action="/manager/project/create"/>
     	</jstl:when>
     	
-    	<jstl:when test="${acme:anyOf(_command, 'show|update|delete') }">
+    	<jstl:when test="${acme:anyOf(_command, 'show|update|delete|publish') }">
         	
         	<jstl:if test="${draftMode == true}">
             	<acme:submit code="manager.projects.button.update" action="/manager/project/update"/>
             	<acme:submit code="manager.projects.button.delete" action="/manager/project/delete"/>
+            	<acme:submit code="manager.projects.button.publish" action="/manager/project/publish"/>
         	</jstl:if>
         	<br/>
 	

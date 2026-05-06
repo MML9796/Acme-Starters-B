@@ -22,7 +22,7 @@ public interface ManagerProjectRepository extends AbstractRepository {
 	@Query("select i from Project i where i.manager.id = :id")
 	Collection<Project> findAllProjectByManagerId(int id);
 
-	@Query("select size(i) from Invention i where i.project.id = :id")
+	@Query("select count(i) from Invention i where i.project.id = :id")
 	int findInventionsSizeById(int id);
 
 	@Query("select i from Invention i where i.project.id = :id")
