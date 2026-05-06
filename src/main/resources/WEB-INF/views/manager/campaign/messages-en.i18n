@@ -1,0 +1,18 @@
+manager.campaign.list.title = Campaign list
+manager.campaign.form.title = Campaign details
+
+manager.campaign.list.label.ticker = Ticker
+manager.campaign.list.label.name = Name
+manager.campaign.list.label.startMoment = Start moment
+manager.campaign.list.label.endMoment = End moment
+
+manager.campaign.form.label.ticker = Ticker
+manager.campaign.form.label.name = Name
+manager.campaign.form.label.description = Description
+manager.campaign.form.label.startMoment = Start moment
+manager.campaign.form.label.endMoment = End moment
+manager.campaign.form.label.monthsActive = Months Active
+manager.campaign.form.label.effort = Effort 
+manager.campaign.form.label.moreInfo = More Info
+manager.campaign.button.milestone = Milestone
+manager.campaign.button.spokesperson= Spokesperson

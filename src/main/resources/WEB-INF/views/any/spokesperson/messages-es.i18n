@@ -8,3 +8,8 @@ any.spokesperson.form.label.userAccount.username = Nombre
 any.spokesperson.form.label.cv = CV
 any.spokesperson.form.label.achievements = Logros
 any.spokesperson.form.label.licensed = Licencia
+
+any.spokesperson.list.label.userAccount.username = Nombre
+any.spokesperson.list.label.cv = CV
+any.spokesperson.list.label.achievements = Logros
+any.spokesperson.list.label.licensed = Licencia

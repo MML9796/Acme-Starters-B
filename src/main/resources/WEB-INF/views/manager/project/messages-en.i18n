@@ -1,0 +1,27 @@
+manager.project.list.title = Project
+manager.projects.list.label.title = Title
+manager.projects.list.label.keyWords = Key Words
+manager.projects.list.label.kickOffMoment = Kick off Moment
+manager.projects.list.label.closeOutMoment = Close out Moment
+
+manager.project.form.title = Project
+manager.projects.form.label.title = Title
+manager.projects.form.label.keyWords = Key Words
+manager.projects.form.label.kickOffMoment = Kick off Moment
+manager.projects.form.label.closeOutMoment = Close out Moment
+manager.projects.form.label.description = Description
+manager.projects.form.label.effort = Effort
+
+manager.projects.button.create = Create
+manager.projects.button.update = Update
+manager.projects.button.delete = Delete
+manager.projects.button.inventor = Inventors
+manager.projects.button.spokesperson = Spokesperson
+manager.projects.button.fundraiser = Fundraisers
+manager.projects.button.campaign = Campaigns
+manager.projects.button.invention = Inventions
+manager.projects.button.strategy = Strategies
+manager.projects.label.roles = Associated Roles
+manager.projects.label.elements = Project Elements
+manager.projects.button.sponsorship = Sponsorship
+manager.projects.button.auditReport = Audit Report

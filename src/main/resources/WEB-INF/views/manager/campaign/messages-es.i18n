@@ -1,0 +1,19 @@
+manager.campaign.list.title = Lista de Campañas
+manager.campaign.form.title = Detalles de la Campaña
+
+manager.campaign.list.label.ticker = Ticket
+manager.campaign.list.label.name = Nombre
+manager.campaign.list.label.startMoment = Comienzo
+manager.campaign.list.label.endMoment = Fin
+
+
+manager.campaign.form.label.ticker = Ticket
+manager.campaign.form.label.name = Nombre
+manager.campaign.form.label.description = Descripción
+manager.campaign.form.label.startMoment = Comienzo
+manager.campaign.form.label.endMoment = Fin
+manager.campaign.form.label.monthsActive = Meses Activos
+manager.campaign.form.label.effort = Esfuerzo 
+manager.campaign.form.label.moreInfo = Más Info
+manager.campaign.button.milestone = Hito
+manager.campaign.button.spokesperson= Portavoz

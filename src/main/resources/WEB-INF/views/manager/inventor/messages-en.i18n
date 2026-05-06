@@ -1,0 +1,11 @@
+# messages-en.i18n
+manager.inventor.form.title = Inventor form
+manager.inventor.list.title =List of Project Inventor 
+
+manager.inventor.list.label.username = Username
+manager.inventor.list.label.bio = Bio
+
+manager.inventor.form.label.username = Username
+manager.inventor.form.label.bio = Bio
+manager.inventor.form.label.keyWords = Key words
+manager.inventor.form.label.licensed = Licensed

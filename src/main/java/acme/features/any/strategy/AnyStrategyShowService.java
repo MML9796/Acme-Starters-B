@@ -41,5 +41,7 @@ public class AnyStrategyShowService extends AbstractService<Any, Strategy> {
 		super.unbindObject(this.strategy, "ticker", "name", "description", "startMoment", "endMoment", "moreInfo", "monthsActive", "expectedPercentage");
 		super.unbindGlobal("id", this.strategy.getId());
 		super.unbindGlobal("fundraiserId", this.strategy.getFundraiser().getId());
+		if (this.strategy.getProject() != null)
+			super.unbindGlobal("title", this.strategy.getProject().getTitle());
 	}
 }

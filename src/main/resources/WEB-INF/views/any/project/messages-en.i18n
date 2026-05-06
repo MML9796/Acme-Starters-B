@@ -20,6 +20,7 @@ any.project.button.invention= Inventions
 any.project.button.strategy= Strategies
 any.project.button.campaign= Campaigns
 any.project.button.sponsorship = Sponsorships
-any.project.button.sponsor.create = Add Sponsorhip
-any.project.button.sponsor.list = My Sponsorhips
-any.project.button.auditor = Add Audit Reports
+any.project.button.audit-report = Audit Reports
+
+any.project.label.roles= Associated Roles
+any.project.label.elements = Project Elements

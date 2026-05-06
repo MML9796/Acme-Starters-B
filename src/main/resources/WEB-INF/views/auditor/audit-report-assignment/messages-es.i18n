@@ -1,0 +1,5 @@
+auditor.audit-report-assignment.form.title = Añadir informe de auditoria
+
+auditor.audit-report-assignment.list=Lista de informes de auditoria
+auditor.audit-report-assignment.button.create = Añadir
+auditor.audit-report-assignment.error.auditReportId.required = Informe de auditoria necesario
