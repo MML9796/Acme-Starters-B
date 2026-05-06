@@ -2,6 +2,7 @@ acme.validation.audit-report.duplicated-ticker.message = The ticker is already i
 acme.validation.audit-report.no-audit-sections.message = Can't publish without audit sections
 acme.validation.audit-report.invalid-start-end-interval.message = Please provide a valid time interval in the future
 
+acme.validation.project.no-inventions.message = Can't publish without inventions
 acme.validation.project.invalid-start-end-interval.message = Please provide a valid time interval in the future
 
 acme.validation.ticker.invalid.message = Invalid ticker format
