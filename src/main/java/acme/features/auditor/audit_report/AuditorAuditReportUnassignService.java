@@ -34,7 +34,7 @@ public class AuditorAuditReportUnassignService extends AbstractService<Auditor, 
 		auditorId = super.getRequest().getPrincipal().getActiveRealm().getId();
 		auditReportId = super.getRequest().getData("id", int.class);
 		aud = this.repository.findAuditReportById(auditReportId);
-		status = aud != null && aud.getAuditor().getId() == auditorId && MomentHelper.getCurrentMoment().before(aud.getProjectUnassignMoment());
+		status = aud != null && aud.getAuditor().getId() == auditorId && aud.getProject() != null && MomentHelper.getCurrentMoment().before(aud.getProjectUnassignMoment());
 		;
 
 		super.setAuthorised(status);
