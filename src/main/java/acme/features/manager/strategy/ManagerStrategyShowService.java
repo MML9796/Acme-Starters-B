@@ -24,8 +24,11 @@ public class ManagerStrategyShowService extends AbstractService<Manager, Strateg
 
 	@Override
 	public void authorise() {
-		// Con que la estrategia exista, el Manager puede verla
-		super.setAuthorised(this.strategy != null);
+		int managerId = super.getRequest().getPrincipal().getActiveRealm().getId();
+
+		boolean status = this.strategy != null && this.strategy.getProject() != null && this.strategy.getProject().getManager().getId() == managerId;
+
+		super.setAuthorised(status);
 	}
 
 	@Override

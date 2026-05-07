@@ -1,6 +1,6 @@
 key,name,notes,expectedPercentage,kind,key:strategy
 tactic-01,"Base Tactic","Base notes text",5.00,SUBTLE,strategy-01
-tactic-02,"T","Base notes text",5.00,SUBTLE,strategy-02
+tactic-02,"T","Base notes text",5.00,SUBTLE,strategy-46
 tactic-03,"Ta","Base notes text",5.00,SUBTLE,strategy-01
 tactic-04,"Ta","Base notes text",5.00,SUBTLE,strategy-02
 tactic-05,"Esta es una tactica para probar el limite max. Esta es una tactica para pr","Base notes text",5.00,SUBTLE,strategy-01
