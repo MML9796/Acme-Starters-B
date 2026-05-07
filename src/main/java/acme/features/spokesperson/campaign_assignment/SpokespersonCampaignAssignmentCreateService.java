@@ -45,7 +45,7 @@ public class SpokespersonCampaignAssignmentCreateService extends AbstractService
 
 		int accountId = super.getRequest().getPrincipal().getAccountId();
 
-		if (this.project != null) {
+		if (this.project != null && this.project.getDraftMode()) {
 
 			Integer count = this.projectRepository.checkProjectBelongsToAccountId(this.project.getId(), accountId);
 
@@ -65,6 +65,8 @@ public class SpokespersonCampaignAssignmentCreateService extends AbstractService
 	@Override
 	public void validate() {
 		super.validateObject(this.campaignAssigment);
+		boolean hasCampaign = this.campaignAssigment.getCampaignId() != 0;
+		super.state(hasCampaign, "campaignId", "spokesperson.campaign-assignment.error.campaignId.required");
 	}
 
 	@Override
@@ -83,5 +85,7 @@ public class SpokespersonCampaignAssignmentCreateService extends AbstractService
 		super.unbindObject(this.campaignAssigment, "campaignId");
 		super.unbindGlobal("listaCampaigns", choices);
 		super.unbindGlobal("projectId", this.project.getId());
+		super.unbindGlobal("draftMode", this.project.getDraftMode());
+
 	}
 }

@@ -45,14 +45,14 @@ public class MemberInventionPartShowService extends AbstractService<Member, Part
 
 		memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		if (this.invention != null) {
+		if (this.invention != null)
+			if (this.invention.getProject() != null) {
+				int projectId = this.invention.getProject().getId();
 
-			int projectId = this.invention.getProject().getId();
+				Integer count = this.projectRepository.checkProjectBelongsToMember(projectId, memberId);
 
-			Integer count = this.projectRepository.checkProjectBelongsToMember(projectId, memberId);
-
-			status = count != null && count > 0;
-		}
+				status = count != null && count > 0;
+			}
 
 		super.setAuthorised(status);
 	}

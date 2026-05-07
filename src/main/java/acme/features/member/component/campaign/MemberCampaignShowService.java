@@ -49,5 +49,7 @@ public class MemberCampaignShowService extends AbstractService<Member, Campaign>
 		super.unbindGlobal("spokespersonId", this.campaign.getSpokesperson().getId());
 		if (this.campaign.getProject() != null && this.campaign.getSpokesperson().getUserAccount().getId() == super.getRequest().getPrincipal().getAccountId())
 			super.unbindGlobal("projectId", this.campaign.getProject().getId());
+		super.unbindGlobal("draftMode", this.campaign.getProject().getDraftMode());
+
 	}
 }

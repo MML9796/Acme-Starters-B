@@ -2,3 +2,5 @@ spokesperson.campaign-assignment.form.title = Add Campaign
 
 spokesperson.campaign-assignment.list=Campaigns list
 spokesperson.campaign-assignment.button.create = Add
+
+spokesperson.campaign-assignment.error.campaignId.required = Campaign Required
