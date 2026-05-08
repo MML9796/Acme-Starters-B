@@ -45,7 +45,7 @@ public class FundraiserStrategyAssignmentCreateService extends AbstractService<F
 
 		int accountId = super.getRequest().getPrincipal().getAccountId();
 
-		if (this.project != null) {
+		if (this.project != null && this.project.getDraftMode()) {
 
 			Integer count = this.projectRepository.checkProjectBelongsToAccountId(this.project.getId(), accountId);
 
@@ -65,6 +65,8 @@ public class FundraiserStrategyAssignmentCreateService extends AbstractService<F
 	@Override
 	public void validate() {
 		super.validateObject(this.strategyAssigment);
+		boolean hasStrategy = this.strategyAssigment.getStrategyId() != 0;
+		super.state(hasStrategy, "strategyId", "fundraiser.strategy-assignment.error.strategyId.required");
 	}
 
 	@Override
@@ -83,5 +85,7 @@ public class FundraiserStrategyAssignmentCreateService extends AbstractService<F
 		super.unbindObject(this.strategyAssigment, "strategyId");
 		super.unbindGlobal("listaStrategies", choices);
 		super.unbindGlobal("projectId", this.project.getId());
+		super.unbindGlobal("draftMode", this.project.getDraftMode());
+
 	}
 }

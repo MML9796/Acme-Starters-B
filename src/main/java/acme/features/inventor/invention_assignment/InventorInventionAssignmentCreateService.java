@@ -45,7 +45,7 @@ public class InventorInventionAssignmentCreateService extends AbstractService<In
 
 		int accountId = super.getRequest().getPrincipal().getAccountId();
 
-		if (this.project != null) {
+		if (this.project != null && this.project.getDraftMode()) {
 
 			Integer count = this.projectRepository.checkProjectBelongsToAccountId(this.project.getId(), accountId);
 
@@ -65,6 +65,8 @@ public class InventorInventionAssignmentCreateService extends AbstractService<In
 	@Override
 	public void validate() {
 		super.validateObject(this.inventionAssigment);
+		boolean hasInvention = this.inventionAssigment.getInventionId() != 0;
+		super.state(hasInvention, "inventionId", "inventor.invention-assignment.error.inventionId.required");
 	}
 
 	@Override
@@ -83,5 +85,7 @@ public class InventorInventionAssignmentCreateService extends AbstractService<In
 		super.unbindObject(this.inventionAssigment, "inventionId");
 		super.unbindGlobal("listaInventions", choices);
 		super.unbindGlobal("projectId", this.project.getId());
+		super.unbindGlobal("draftMode", this.project.getDraftMode());
+
 	}
 }
