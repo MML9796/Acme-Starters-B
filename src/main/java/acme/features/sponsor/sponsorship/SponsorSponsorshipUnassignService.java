@@ -34,7 +34,7 @@ public class SponsorSponsorshipUnassignService extends AbstractService<Sponsor, 
 		sponsorId = super.getRequest().getPrincipal().getActiveRealm().getId();
 		sponsorshipId = super.getRequest().getData("id", int.class);
 		spsh = this.repository.findSponsorshipById(sponsorshipId);
-		status = spsh != null && spsh.getSponsor().getId() == sponsorId && MomentHelper.getCurrentMoment().before(spsh.getProjectUnassignMoment());
+		status = spsh != null && spsh.getSponsor().getId() == sponsorId && spsh.getProject() != null && MomentHelper.getCurrentMoment().before(spsh.getProjectUnassignMoment());
 
 		super.setAuthorised(status);
 	}

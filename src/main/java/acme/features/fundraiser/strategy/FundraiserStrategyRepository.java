@@ -20,4 +20,7 @@ public interface FundraiserStrategyRepository extends AbstractRepository {
 
 	@Query("select sum(t.expectedPercentage) from Tactic t where t.strategy.id = :id")
 	Double sumPercentageByStrategyId(int id);
+
+	@Query("select count(t) from Tactic t where t.strategy.id = :id")
+	int findTacticsSizeById(int id);
 }
