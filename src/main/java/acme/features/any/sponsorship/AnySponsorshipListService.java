@@ -40,7 +40,8 @@ public class AnySponsorshipListService extends AbstractService<Any, Sponsorship>
 	public void authorise() {
 		boolean status = true;
 		if (super.getRequest().hasData("projectId") && (this.project == null || this.project.getDraftMode()))
-			super.setAuthorised(status);
+			status = false;
+		super.setAuthorised(status);
 	}
 
 	@Override
