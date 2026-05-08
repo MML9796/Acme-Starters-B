@@ -34,7 +34,11 @@ public class ManagerTacticListService extends AbstractService<Manager, Tactic> {
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(this.strategy != null);
+		int managerId = super.getRequest().getPrincipal().getActiveRealm().getId();
+
+		boolean status = this.strategy != null && this.strategy.getProject() != null && this.strategy.getProject().getManager().getId() == managerId;
+
+		super.setAuthorised(status);
 	}
 
 	@Override

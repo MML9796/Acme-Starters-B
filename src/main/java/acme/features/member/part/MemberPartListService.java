@@ -38,9 +38,10 @@ public class MemberPartListService extends AbstractService<Member, Part> {
 		this.part = this.repository.findAllPartByInventionId(id);
 		this.invention = this.inventionRepository.findInventionById(id);
 
-		if (this.invention != null)
-			this.project = this.projectRepository.findProjectById(this.invention.getProject().getId());
-		else
+		if (this.invention != null) {
+			if (this.invention.getProject() != null)
+				this.project = this.projectRepository.findProjectById(this.invention.getProject().getId());
+		} else
 			this.project = null;
 	}
 

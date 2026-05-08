@@ -36,9 +36,10 @@ public class MemberMilestoneListService extends AbstractService<Member, Mileston
 		this.milestone = this.repository.findAllMilestoneByCampaignId(id);
 		this.campaign = this.campaignRepository.findCampaignById(id);
 
-		if (this.campaign != null)
-			this.project = this.projectRepository.findProjectById(this.campaign.getProject().getId());
-		else
+		if (this.campaign != null) {
+			if (this.campaign.getProject() != null)
+				this.project = this.projectRepository.findProjectById(this.campaign.getProject().getId());
+		} else
 			this.project = null;
 	}
 

@@ -48,7 +48,7 @@ public class SponsorshipValidator extends AbstractValidator<ValidSponsorship, Sp
 				}
 			}
 
-			if (!sponsorship.getDraftMode()) {
+			if (Boolean.FALSE.equals(sponsorship.getDraftMode())) {
 				boolean hasDonation = true;
 				Integer existingDonations = this.repository.findDonationsSizeBySponsorshipId(sponsorship.getId());
 				hasDonation = existingDonations != null && existingDonations > 0;

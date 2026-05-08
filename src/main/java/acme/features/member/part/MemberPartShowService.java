@@ -19,10 +19,10 @@ public class MemberPartShowService extends AbstractService<Member, Part> {
 	@Autowired
 	private MemberPartRepository	repository;
 	@Autowired
-	private MemberProjectRepository			projectRepository;
+	private MemberProjectRepository	projectRepository;
 
-	private Part							part;
-	private Invention						invention;
+	private Part					part;
+	private Invention				invention;
 
 
 	//AbstractService interface
@@ -45,14 +45,13 @@ public class MemberPartShowService extends AbstractService<Member, Part> {
 
 		memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		if (this.invention != null)
-			if (this.invention.getProject() != null) {
-				int projectId = this.invention.getProject().getId();
+		if (this.invention != null && this.invention.getProject() != null) {
+			int projectId = this.invention.getProject().getId();
 
-				Integer count = this.projectRepository.checkProjectBelongsToMember(projectId, memberId);
+			Integer count = this.projectRepository.checkProjectBelongsToMember(projectId, memberId);
 
-				status = count != null && count > 0;
-			}
+			status = count != null && count > 0;
+		}
 
 		super.setAuthorised(status);
 	}

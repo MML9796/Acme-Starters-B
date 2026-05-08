@@ -24,7 +24,11 @@ public class ManagerCampaignShowService extends AbstractService<Manager, Campaig
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(this.campaign != null);
+		int managerId = super.getRequest().getPrincipal().getActiveRealm().getId();
+
+		boolean status = this.campaign != null && this.campaign.getProject() != null && this.campaign.getProject().getManager().getId() == managerId;
+
+		super.setAuthorised(status);
 	}
 
 	@Override

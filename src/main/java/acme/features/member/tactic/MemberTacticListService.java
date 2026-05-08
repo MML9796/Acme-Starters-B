@@ -38,9 +38,10 @@ public class MemberTacticListService extends AbstractService<Member, Tactic> {
 		this.tactic = this.repository.findAllTacticByStrategyId(id);
 		this.strategy = this.strategyRepository.findStrategyById(id);
 
-		if (this.strategy != null)
-			this.project = this.projectRepository.findProjectById(this.strategy.getProject().getId());
-		else
+		if (this.strategy != null) {
+			if (this.strategy.getProject() != null)
+				this.project = this.projectRepository.findProjectById(this.strategy.getProject().getId());
+		} else
 			this.project = null;
 	}
 

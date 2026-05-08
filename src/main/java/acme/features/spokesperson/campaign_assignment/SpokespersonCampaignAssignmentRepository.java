@@ -19,12 +19,7 @@ public interface SpokespersonCampaignAssignmentRepository extends AbstractReposi
 	@Query("select c from Campaign c where c.id = :id")
 	Campaign findCampaignById(int id);
 
-	@Query("""
-			select c
-			from Campaign c
-			where c.spokesperson.id = :spokespersonId
-			and c.project is null
-		""")
+	@Query("select c from Campaign c where c.spokesperson.id = :spokespersonId and c.project is null")
 	Collection<Campaign> findAvailableCampaignBySpokespersonId(int spokespersonId);
 
 }
