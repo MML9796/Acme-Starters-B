@@ -37,45 +37,45 @@ public class Campaign extends AbstractEntity {
 
 	@Transient
 	@Autowired
-	private CampaignRepository	campaignRepository;
+	private transient CampaignRepository	campaignRepository;
 	// Serialisation identifier
-	private static final long	serialVersionUID	= 1L;
+	private static final long				serialVersionUID	= 1L;
 
 	//Attributes
 	@Mandatory
 	@ValidTicker
 	@Column(unique = true)
-	private String				ticker;
+	private String							ticker;
 
 	@Mandatory
 	@ValidHeader
 	@Column
-	private String				name;
+	private String							name;
 
 	@Mandatory
 	@ValidText
 	@Column
-	private String				description;
+	private String							description;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date				startMoment;
+	private Date							startMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date				endMoment;
+	private Date							endMoment;
 
 	@Optional
 	@ValidUrl
 	@Column
-	private String				moreInfo;
+	private String							moreInfo;
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean				draftMode;
+	private Boolean							draftMode;
 
 	//Derived attributes
 

@@ -19,12 +19,7 @@ public interface FundraiserStrategyAssignmentRepository extends AbstractReposito
 	@Query("select s from Strategy s where s.id = :id")
 	Strategy findStrategyById(int id);
 
-	@Query("""
-			select s
-			from Strategy s
-			where s.fundraiser.id = :fundraiserId
-			and s.project is null
-		""")
+	@Query("select s from Strategy s where s.fundraiser.id = :fundraiserId and s.project is null")
 	Collection<Strategy> findAvailableStrategyByFundraiserId(int fundraiserId);
 
 }

@@ -36,45 +36,45 @@ public class Project extends AbstractEntity {
 
 	// Serialisation version --------------------------------------------------
 
-	private static final long	serialVersionUID	= 1L;
+	private static final long			serialVersionUID	= 1L;
 
 	// Attributes -------------------------------------------------------------
 
 	@Mandatory
 	@ValidHeader
 	@Column
-	private String				title;
+	private String						title;
 
 	@Mandatory
 	@ValidText
 	@Column
-	private String				keyWords;
+	private String						keyWords;
 
 	@Mandatory
 	@ValidText
 	@Column
-	private String				description;
+	private String						description;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date				kickOffMoment;
+	private Date						kickOffMoment;
 
 	@Mandatory
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date				closeOutMoment;
+	private Date						closeOutMoment;
 
 	@Mandatory
 	@Valid
 	@Column
-	private Boolean				draftMode;
+	private Boolean						draftMode;
 
 	// Derived attributes -----------------------------------------------------
 
 	@Transient
 	@Autowired
-	private ProjectRepository	repository;
+	private transient ProjectRepository	repository;
 
 
 	@Mandatory
