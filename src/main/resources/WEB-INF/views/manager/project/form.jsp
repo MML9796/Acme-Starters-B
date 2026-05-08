@@ -62,11 +62,11 @@
 	        <spring:message code="manager.projects.button.strategy"/>
 	    </button>
 	    <jstl:if test="${draftMode == false}">
-            <button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/sponsorship/list?projectId=${id}';">
+            <button type="button" class="btn btn-success" onclick="javascript: window.location.href='any/sponsorship/list?projectId=${id}';">
 		        <spring:message code="manager.projects.button.sponsorship"/>
 		    </button>
 		    
-		    <button type="button" class="btn btn-success" onclick="javascript: window.location.href='manager/audit-report/list?projectId=${id}';">
+		    <button type="button" class="btn btn-success" onclick="javascript: window.location.href='any/audit-report/list?projectId=${id}';">
 		        <spring:message code="manager.projects.button.auditReport"/>
 		    </button>
 	</jstl:if>

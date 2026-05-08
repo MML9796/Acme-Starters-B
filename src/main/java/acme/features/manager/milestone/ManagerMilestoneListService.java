@@ -18,20 +18,23 @@ public class ManagerMilestoneListService extends AbstractService<Manager, Milest
 	private ManagerMilestoneRepository	repository;
 
 	private Collection<Milestone>		milestones;
-	private Campaign					parent;
+	private Campaign					campaign;
 
 
 	@Override
 	public void load() {
 		int campaignId = super.getRequest().getData("campaignId", int.class);
 		this.milestones = this.repository.findMilestonesByCampaignId(campaignId);
-		this.parent = this.repository.findCampaignById(campaignId);
+		this.campaign = this.repository.findCampaignById(campaignId);
 	}
 
 	@Override
 	public void authorise() {
+		int managerId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		super.setAuthorised(this.parent != null);
+		boolean status = this.campaign != null && this.campaign.getProject() != null && this.campaign.getProject().getManager().getId() == managerId;
+
+		super.setAuthorised(status);
 	}
 
 	@Override

@@ -25,7 +25,11 @@ public class ManagerInventionShowService extends AbstractService<Manager, Invent
 
 	@Override
 	public void authorise() {
-		super.setAuthorised(this.invention != null);
+		int managerId = super.getRequest().getPrincipal().getActiveRealm().getId();
+
+		boolean status = this.invention != null && this.invention.getProject() != null && this.invention.getProject().getManager().getId() == managerId;
+
+		super.setAuthorised(status);
 	}
 
 	@Override

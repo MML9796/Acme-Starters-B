@@ -5,6 +5,6 @@
 <acme:form>
     <acme:form-textbox code="manager.tactic.form.label.name" path="name"/>    
     <acme:form-double code="manager.tactic.form.label.expectedPercentage" path="expectedPercentage"/>
-    <acme:form-textbox code="manager.tactic.form.label.kind" path="kind"/>   
-    <acme:form-textarea code="manager.tactic.form.label.notes" path="notes"/>
+    <acme:form-select code="fundraiser.tactic.form.label.kind" path="kind" choices="${listaKinds}"/>   
+    <acme:form-textarea code="fundraiser.tactic.form.label.notes" path="notes"/>
 </acme:form>
