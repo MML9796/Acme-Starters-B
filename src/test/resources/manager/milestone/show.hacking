@@ -158,7 +158,7 @@ request-id,request-method,request-path,request-query,request-payload,response-st
 "14e54119-7b54-a2d7-9865-09f464aff532",GET,/images/banner.png,,,200,image/png,,,174399287943700,174399292394500,174399293005900
 "e88403b3-20d3-fd53-85a1-6fd092b6437d",GET,/images/police-badge.png,,,200,image/png,,,174399316488200,174399319539300,174399320056500
 "9276a33c-e05c-2bc4-1a06-e4f10f2fda82",GET,/images/logo.png,,,200,image/png,,,174399326089800,174399329304400,174399329933100
-"be37c3ab-39e8-4c37-fdff-1619f6c76be8",GET,/manager/milestone/show,id=-496,,500,text/html;charset=utf-8,_csrf=,"Access is not authorised",174404921391800,174405053431200,174406413905000
+"be37c3ab-39e8-4c37-fdff-1619f6c76be8",GET,/manager/milestone/show,id=-502,,500,text/html;charset=utf-8,_csrf=,"Access is not authorised",174404921391800,174405053431200,174406413905000
 "9be786e3-8469-7096-a628-0607136dd25b",GET,"/libraries/fontawesome/5.2.0/css/all.min.css",,,200,text/css,,,174406453417900,174406455438300,174406455893100
 "b41b12fd-b0be-61a3-3c5b-fa869c119364",GET,"/libraries/chart.js/2.7.2/js/chart.bundle.min.js",,,200,application/javascript,,,174406459642400,174406462005000,174406462572100
 "b4daf407-daea-2558-2c4d-4e0ad9f2e98c",GET,"/libraries/bootstrap/4.1.3/css/bootstrap.min.css",,,200,text/css,,,174406466789300,174406470215400,174406470786700
@@ -174,7 +174,7 @@ request-id,request-method,request-path,request-query,request-payload,response-st
 "28f0ed7f-eb8b-7126-f22f-e65e84e193e2",GET,/images/banner.png,,,200,image/png,,,174406550546500,174406554079600,174406554640800
 "be0a1142-eaa2-a631-41ae-146c90e30ad7",GET,/images/police-badge.png,,,200,image/png,,,174406573259600,174406576815700,174406577448300
 "040229aa-01f8-e9de-0fe6-27be4562899b",GET,/images/logo.png,,,200,image/png,,,174406582230500,174406585794100,174406586276500
-"ed78eb0d-cd7b-6eac-da61-eb96bbaf54b1",GET,/manager/milestone/show,id=-499,,500,text/html;charset=utf-8,_csrf=,"Access is not authorised",174410892355900,174411034961100,174412302704700
+"ed78eb0d-cd7b-6eac-da61-eb96bbaf54b1",GET,/manager/milestone/show,id=-503,,500,text/html;charset=utf-8,_csrf=,"Access is not authorised",174410892355900,174411034961100,174412302704700
 "61e26e4f-faa7-479b-82c2-07e1acc1eb5c",GET,"/libraries/fontawesome/5.2.0/css/all.min.css",,,200,text/css,,,174412348848100,174412351111900,174412351540800
 "fb01fe29-4151-f58a-02eb-6961603413dc",GET,"/libraries/bootstrap/4.1.3/css/bootstrap.min.css",,,200,text/css,,,174412356027900,174412359271000,174412359963800
 "028cdb5c-d124-279f-90bd-9e8b012ebeb5",GET,"/libraries/datatables/1.10.18/css/datatables.min.css",,,200,text/css,,,174412365719100,174412368476400,174412368862200

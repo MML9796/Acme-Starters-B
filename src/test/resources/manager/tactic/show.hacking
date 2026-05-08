@@ -156,7 +156,7 @@ request-id,request-method,request-path,request-query,request-payload,response-st
 "8beaf914-eeac-c75f-4b73-eb92772f2ef9",GET,/images/police-badge.png,,,200,image/png,,,193832388184900,193832391163100,193832391552400
 "a63a705b-a9a2-3508-052a-fbd2a15a47a5",GET,/images/banner.png,,,200,image/png,,,193832395769200,193832400112800,193832400825100
 "063cb3f9-86f5-a162-c36e-2c43bacb64d2",GET,/images/logo.png,,,200,image/png,,,193832428837100,193832432079100,193832432926900
-"0320147c-f282-ce1a-a693-e0b411ae93d4",GET,/manager/tactic/show,id=-595,,500,text/html;charset=utf-8,_csrf=,"Access is not authorised",193839986865400,193840043555600,193840384559900
+"0320147c-f282-ce1a-a693-e0b411ae93d4",GET,/manager/tactic/show,id=-602,,500,text/html;charset=utf-8,_csrf=,"Access is not authorised",193839986865400,193840043555600,193840384559900
 "c61b7789-a373-3c5d-409e-d1158e7b9f0f",GET,"/libraries/fontawesome/5.2.0/css/all.min.css",,,200,text/css,,,193840409214900,193840411741300,193840412428600
 "d91a2085-5cda-46a3-ae96-9854f741490d",GET,"/libraries/chart.js/2.7.2/js/chart.bundle.min.js",,,200,application/javascript,,,193840416718300,193840419384600,193840419992000
 "f677df82-4de7-a1fe-a3c4-08b024c87897",GET,"/libraries/areyousure/1.9.0/js/areyousure.min.js",,,200,application/javascript,,,193840425335800,193840427554800,193840428037700

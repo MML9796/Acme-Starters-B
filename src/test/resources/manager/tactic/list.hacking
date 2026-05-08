@@ -143,7 +143,7 @@ request-id,request-method,request-path,request-query,request-payload,response-st
 "90489f80-2d52-9d1a-dd16-dc3da4f390d8",GET,/images/police-badge.png,,,200,image/png,,,193070705842600,193070708906900,193070709321700
 "d0a0a265-b810-ce46-664f-e47c3492a85c",GET,/images/banner.png,,,200,image/png,,,193070716389000,193070720694800,193070721503900
 "45e030e5-032b-0ddd-ed65-63ddfccd4a95",GET,/images/logo.png,,,200,image/png,,,193070738510000,193070741476700,193070741949700
-"6e413197-9f4e-1135-1a6b-4a282425a2b5",GET,/manager/tactic/list,strategyId=-533,,500,text/html;charset=utf-8,_csrf=,"Access is not authorised",193079304894700,193079364660700,193079770843100
+"6e413197-9f4e-1135-1a6b-4a282425a2b5",GET,/manager/tactic/list,strategyId=-539,,500,text/html;charset=utf-8,_csrf=,"Access is not authorised",193079304894700,193079364660700,193079770843100
 "77cfaae3-6ca8-f4a1-eeb5-f6035351538d",GET,"/libraries/fontawesome/5.2.0/css/all.min.css",,,200,text/css,,,193079817459600,193079818611400,193079818892000
 "7a5854bd-1ec0-c0b5-e3b1-0217425ded24",GET,"/libraries/bootstrap/4.1.3/css/bootstrap.min.css",,,200,text/css,,,193079820973400,193079823134700,193079823676900
 "ab501a0c-3f0b-69fd-0487-722ef2afaabd",GET,"/libraries/datatables/1.10.18/css/datatables.min.css",,,200,text/css,,,193079829472700,193079831911000,193079832566800
