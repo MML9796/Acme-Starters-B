@@ -117,6 +117,7 @@ master.menu.sponsor.sponsorship.list = Mis Patrocinios
 #master.menu.manager ##############################################
 master.menu.manager = Director
 master.menu.manager.project.list= Mis Proyectos
+master.menu.manager.dashboard = Panel de indicadores
 
 #master.menu.member ###############################################
 master.menu.member = Miembro

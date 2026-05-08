@@ -116,6 +116,7 @@ master.menu.sponsor.sponsorship.list = My sponsorships
 #master.menu.manager ##############################################
 master.menu.manager = Manager
 master.menu.manager.project.list= My projects
+master.menu.manager.dashboard = Dashboard
 
 #master.menu.member ##############################################
 master.menu.member = Member
