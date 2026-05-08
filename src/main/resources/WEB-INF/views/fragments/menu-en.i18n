@@ -71,7 +71,8 @@ master.menu.auditor.project.list = Audited projects
 # master.menu.manager #########################################################
 
 master.menu.manager = Manager
-master.menu.manager.project.list= My projects
+master.menu.manager.project.list = My projects
+master.menu.manager.dashboard = Dashboard
 
 # master.menu.member ##########################################################
 
