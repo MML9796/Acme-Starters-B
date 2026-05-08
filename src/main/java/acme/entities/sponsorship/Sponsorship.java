@@ -79,7 +79,7 @@ public class Sponsorship extends AbstractEntity {
 
 	@Optional
 	@ValidMoment(constraint = Constraint.ENFORCE_FUTURE)
-	@Column
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date					projectUnassignMoment;
 
 
