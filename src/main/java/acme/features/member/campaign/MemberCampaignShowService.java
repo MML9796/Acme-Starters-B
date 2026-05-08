@@ -30,7 +30,7 @@ public class MemberCampaignShowService extends AbstractService<Member, Campaign>
 
 		memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		if (this.campaign != null) {
+		if (this.campaign != null && this.campaign.getProject() != null) {
 
 			int projectId = this.campaign.getProject().getId();
 

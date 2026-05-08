@@ -30,7 +30,7 @@ public class MemberInventionShowService extends AbstractService<Member, Inventio
 
 		memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		if (this.invention != null) {
+		if (this.invention != null && this.invention.getProject() != null) {
 
 			int projectId = this.invention.getProject().getId();
 

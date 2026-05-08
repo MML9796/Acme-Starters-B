@@ -50,7 +50,7 @@ public class MemberTacticListService extends AbstractService<Member, Tactic> {
 
 		int memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		if (this.project != null || this.strategy != null) {
+		if (this.project != null && this.strategy != null) {
 			Integer count = this.projectRepository.checkProjectBelongsToMember(this.project.getId(), memberId);
 
 			status = count != null && count > 0;

@@ -38,7 +38,7 @@ public class MemberInventionListService extends AbstractService<Member, Inventio
 
 		int memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		if (this.project != null) {
+		if (this.project != null && this.invention != null) {
 			Integer count = this.projectRepository.checkProjectBelongsToMember(this.project.getId(), memberId);
 
 			status = count != null && count > 0;

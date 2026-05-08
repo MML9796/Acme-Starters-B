@@ -17,10 +17,10 @@ public class MemberMilestoneShowService extends AbstractService<Member, Mileston
 	@Autowired
 	private MemberMilestoneRepository	repository;
 	@Autowired
-	private MemberProjectRepository				projectRepository;
+	private MemberProjectRepository		projectRepository;
 
-	private Milestone							milestone;
-	private Campaign							campaign;
+	private Milestone					milestone;
+	private Campaign					campaign;
 
 
 	//AbstractService interface
@@ -43,7 +43,7 @@ public class MemberMilestoneShowService extends AbstractService<Member, Mileston
 
 		memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		if (this.campaign != null) {
+		if (this.campaign != null && this.campaign.getProject() != null) {
 
 			int projectId = this.campaign.getProject().getId();
 

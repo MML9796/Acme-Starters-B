@@ -28,7 +28,7 @@ public class MemberStrategyShowService extends AbstractService<Member, Strategy>
 
 		memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		if (this.strategy != null) {
+		if (this.strategy != null && this.strategy.getProject() != null) {
 
 			int projectId = this.strategy.getProject().getId();
 

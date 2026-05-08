@@ -19,10 +19,10 @@ public class MemberTacticShowService extends AbstractService<Member, Tactic> {
 	@Autowired
 	private MemberTacticRepository	repository;
 	@Autowired
-	private MemberProjectRepository			projectRepository;
+	private MemberProjectRepository	projectRepository;
 
-	private Tactic							tactic;
-	private Strategy						strategy;
+	private Tactic					tactic;
+	private Strategy				strategy;
 
 
 	//AbstractService interface
@@ -45,7 +45,7 @@ public class MemberTacticShowService extends AbstractService<Member, Tactic> {
 
 		memberId = super.getRequest().getPrincipal().getActiveRealm().getId();
 
-		if (this.strategy != null) {
+		if (this.strategy != null && this.strategy.getProject() != null) {
 
 			int projectId = this.strategy.getProject().getId();
 
