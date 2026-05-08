@@ -1,5 +1,5 @@
 
-package acme.features.manager.memberProject;
+package acme.features.manager.member_project;
 
 import java.util.Collection;
 
@@ -19,7 +19,7 @@ import acme.realms.Member;
 import acme.realms.Spokesperson;
 
 @Service
-public class ManagerMemberProjectCreateService extends AbstractService<Manager, MemberProject> {
+public class ManagerMemberProjectDeleteService extends AbstractService<Manager, MemberProject> {
 
 	@Autowired
 	private ManagerMemberProjectRepository	repository;
@@ -83,7 +83,6 @@ public class ManagerMemberProjectCreateService extends AbstractService<Manager, 
 		}
 
 	}
-
 	@Override
 	public void validate() {
 		super.validateObject(this.memberProject);
@@ -91,7 +90,14 @@ public class ManagerMemberProjectCreateService extends AbstractService<Manager, 
 
 	@Override
 	public void execute() {
-		this.repository.save(this.memberProject);
+		if (this.memberProject != null && this.memberProject.getMember() != null) {
+			int projectId = this.memberProject.getProject().getId();
+			int userAccountId = this.memberProject.getMember().getUserAccount().getId();
+
+			MemberProject realMp = this.repository.findOneByProjectIdAndUserAccountId(projectId, userAccountId);
+			if (realMp != null)
+				this.repository.delete(realMp);
+		}
 	}
 
 	@Override
@@ -100,15 +106,15 @@ public class ManagerMemberProjectCreateService extends AbstractService<Manager, 
 		String role = super.getRequest().getData("role", String.class);
 		SelectChoices choices = null;
 		if ("INVENTOR".equals(role)) {
-			Collection<Inventor> inv = this.memberRepo.findUnassignedInventors(projectId);
+			Collection<Inventor> inv = this.memberRepo.findAssignedInventors(projectId);
 			choices = SelectChoices.from(inv, "userAccount.username", null);
 
 		} else if ("SPOKESPERSON".equals(role)) {
-			Collection<Spokesperson> sp = this.memberRepo.findUnassignedSpokespersons(projectId);
+			Collection<Spokesperson> sp = this.memberRepo.findAssignedSpokespersons(projectId);
 			choices = SelectChoices.from(sp, "userAccount.username", null);
 
 		} else if ("FUNDRAISER".equals(role)) {
-			Collection<Fundraiser> fd = this.memberRepo.findUnassignedFundraisers(projectId);
+			Collection<Fundraiser> fd = this.memberRepo.findAssignedFundraisers(projectId);
 			choices = SelectChoices.from(fd, "userAccount.username", null);
 
 		}

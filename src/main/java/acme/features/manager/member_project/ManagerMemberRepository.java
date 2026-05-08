@@ -1,5 +1,5 @@
 
-package acme.features.manager.memberProject;
+package acme.features.manager.member_project;
 
 import java.util.Collection;
 

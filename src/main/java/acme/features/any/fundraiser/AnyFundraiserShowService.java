@@ -25,10 +25,10 @@ public class AnyFundraiserShowService extends AbstractService<Any, Fundraiser> {
 
 	@Override
 	public void authorise() {
+		boolean status = true;
 		if (this.fundraiser == null)
-			super.setAuthorised(false);
-		else
-			super.setAuthorised(true);
+			status = false;
+		super.setAuthorised(status);
 	}
 
 	@Override

@@ -19,12 +19,7 @@ public interface InventorInventionAssignmentRepository extends AbstractRepositor
 	@Query("select i from Invention i where i.id = :id")
 	Invention findInventionById(int id);
 
-	@Query("""
-			select i
-			from Invention i
-			where i.inventor.id = :inventorId
-			and i.project is null
-		""")
+	@Query("select i from Invention i where i.inventor.id = :inventorId and i.project is null ")
 	Collection<Invention> findAvailableInventionByInventorId(int inventorId);
 
 }
