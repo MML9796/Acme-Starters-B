@@ -15,10 +15,9 @@
          
     <acme:button code="inventor.invention.button.parts" action="/member/part/list?inventionId=${id}"/>
 	<acme:button code="any.invention.button.inventor" action="/any/inventor/show?id=${inventorId}"/>
-    
-
-	<jstl:if test="${projectId != null}">
+        
+    <jstl:if test="${projectId != null && draftMode}">
 		<acme:submit code="member.invention.button.unassign" action="/inventor/invention/unassign?inventionId=${id}"/>
 	</jstl:if>
-        
 </acme:form>
+

@@ -2,3 +2,4 @@ inventor.invention-assignment.form.title = Add Invention
 
 inventor.invention-assignment.list=Inventions list
 inventor.invention-assignment.button.create = Add
+inventor.invention-assignment.error.inventionId.required = Invention Required

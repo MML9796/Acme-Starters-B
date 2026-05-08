@@ -33,6 +33,7 @@
 
 		<acme:menu-option code="master.menu.administrator" access="hasRealm('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.list-user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-suboption code="master.menu.administrator.list-banners" action="/administrator/banner/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.populate-db-initial" action="/administrator/system/populate-initial"/>
 			<acme:menu-suboption code="master.menu.administrator.populate-db-sample" action="/administrator/system/populate-sample"/>			
@@ -73,8 +74,10 @@
 		<acme:menu-option code="master.menu.member" access="hasRealm('Member')">
 			<acme:menu-suboption code="master.menu.member.project.list" action="/member/project/list"/>
 		</acme:menu-option>
+		
 		<acme:menu-option code="master.menu.manager" access="hasRealm('Manager')">
 			<acme:menu-suboption code="master.menu.manager.project.list" action="/manager/project/list"/>
+			<acme:menu-suboption code="master.menu.manager.dashboard" action="/manager/dashboard/show"/>
 		</acme:menu-option>
 	</acme:menu-left>
 

@@ -2,3 +2,5 @@ fundraiser.strategy-assignment.form.title = Añadir estrategia
 
 fundraiser.strategy-assignment.list=Lista de estrategias
 fundraiser.strategy-assignment.button.create = Añadir
+
+fundraiser.strategy-assignment.error.strategyId.required = Estrategia requerida

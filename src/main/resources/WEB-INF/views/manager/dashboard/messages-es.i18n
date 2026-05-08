@@ -1,0 +1,12 @@
+manager.dashboard.form.title = Panel de indicadores de gerente
+
+manager.dashboard.form.title.project = Estadísticas de proyectos
+manager.dashboard.form.title.effort = Estadísticas de esfuerzo de proyectos propios
+
+manager.dashboard.form.label.number-projects = Número de proyectos gestionados
+manager.dashboard.form.label.deviation-number-projects-other-managers = Desviación del número de proyectos
+manager.dashboard.form.label.mimimum-effort-projects = Mínimo esfuerzo
+manager.dashboard.form.label.maximum-effort-projects = Máximo esfuerzo
+manager.dashboard.form.label.average-effort-projects = Esfuerzo medio
+manager.dashboard.form.label.average-absoulte-deviation-effort-projects = Desviación absoluta media del esfuerzo
+

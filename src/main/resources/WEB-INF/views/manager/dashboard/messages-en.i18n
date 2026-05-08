@@ -1,0 +1,12 @@
+manager.dashboard.form.title = Manager dashboard
+
+manager.dashboard.form.title.project = Project Statistics
+manager.dashboard.form.title.effort = Own Project's Effort Statistics
+
+manager.dashboard.form.label.number-projects = Number of managed projects
+manager.dashboard.form.label.deviation-number-projects-other-managers = Deviation of the number of managed projects
+manager.dashboard.form.label.mimimum-effort-projects = Minimum effort
+manager.dashboard.form.label.maximum-effort-projects = Maximum effort
+manager.dashboard.form.label.average-effort-projects = Average effort
+manager.dashboard.form.label.average-absoulte-deviation-effort-projects = Effort average absolute deviation
+

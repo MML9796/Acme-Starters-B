@@ -84,7 +84,7 @@ public class Project extends AbstractEntity {
 		// Very inefficient, but needed since monthsActive is transient
 		Double result;
 
-		Double totalEffort;
+		Double totalMonths;
 		List<Invention> inventions;
 		List<Campaign> campaigns;
 		List<Strategy> strategies;
@@ -92,7 +92,7 @@ public class Project extends AbstractEntity {
 		inventions = this.repository.getProjectInventionsById(this.getId());
 		campaigns = this.repository.getProjectCampaignsById(this.getId());
 		strategies = this.repository.getProjectStrategiesById(this.getId());
-		totalEffort = inventions.stream().mapToDouble(i -> i.getMonthsActive()).sum() + campaigns.stream().mapToDouble(c -> c.getMonthsActive()).sum() + strategies.stream().mapToDouble(s -> s.getMonthsActive()).sum();
+		totalMonths = inventions.stream().mapToDouble(i -> i.getMonthsActive()).sum() + campaigns.stream().mapToDouble(c -> c.getMonthsActive()).sum() + strategies.stream().mapToDouble(s -> s.getMonthsActive()).sum();
 
 		Integer involvedCount;
 		Integer wrapper;
@@ -100,8 +100,7 @@ public class Project extends AbstractEntity {
 		wrapper = this.repository.getProjectMemberCountById(this.getId());
 		involvedCount = wrapper == null ? 0 : wrapper;
 
-		// SOLUCIÓN: Cambiamos el null por 0.0 para que no salte el @Mandatory
-		result = involvedCount > 0 ? totalEffort / involvedCount : 0.0;
+		result = involvedCount > 0 ? totalMonths / involvedCount : 0.0;
 
 		return result;
 	}
